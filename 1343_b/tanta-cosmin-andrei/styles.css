@@ -1,0 +1,71 @@
+  p { /* selector de tag: toate paragrafele */
+  color: blue;
+  }
+  .meniu { /* selector de clasă: elementele cu class="meniu" */
+  background-color: lightblue;
+  padding: 8px;
+  }
+
+.tg  {
+    border-collapse:collapse;border-spacing:1;
+}
+.tg td{color:black;
+    border-style:solid;
+    border-width:2px;
+    font-size:16px;
+    padding:10px 5px;
+}
+.tg th{color:black;
+    border-style:solid;
+    border-width:2px;
+    font-size:16px;
+    padding:10px 5px;
+}
+.tg .tg-verzi{
+    background-color:lightgreen; 
+    color: darkgoldenrod;
+    border-color:magenta;
+    text-align:middle;
+    vertical-align:center
+}
+.tg .tg-albastre{
+    background-color:cyan;
+    border-color:magenta;
+    text-align:middle;
+    vertical-align:center
+}
+
+.ol{
+     background-color: mistyrose;
+     padding: 20px;
+ }
+.li{
+    color:firebrick ;
+ }
+
+.descriere {
+        background-color: yellow;
+        color: blue;
+        padding: 10px;
+}
+.antet-filme{
+    background-color: cyan;
+    padding: 10px;
+}
+.antet-muzica{
+    background-color: lightgreen;
+    padding: 10px;
+}
+.antet-muzica a:hover{
+    background-color: pink;
+    color: pink;
+}
+.antet-filme a:hover{
+    background-color: pink;
+    color: pink;
+}
+
+.activ{
+    text-decoration: none;
+    font-weight: bold;
+}

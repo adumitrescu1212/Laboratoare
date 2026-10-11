@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.meniu {
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.meniu-acasa {
+    background-color: lightblue;
+}
+
+.meniu-filme {
+    background-color: lightgreen;
+}
+
+.meniu-muzici {
+    background-color: lightpink;
+}
+
+.meniu a {
+    color: darkblue;
+    margin-right: 15px;
+}
+
+.meniu a:hover {
+    color: red;
+}
+
+.meniu a.activ {
+    font-weight: bold;
+    text-decoration: none;
+}
+.descriere {
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+}
+.tabel-filme {
+    border-collapse: collapse;
+    width: 730px;
+}
+
+.tabel-filme th,
+.tabel-filme td {
+    border: 2px solid magenta;
+    padding: 5px 12px;
+    text-align: center;
+}
+
+.tabel-filme th {
+    background-color: #ccffff;
+    color: black;
+    font-weight: bold;
+}
+
+
+.tabel-filme td {
+    background-color: #ccffcc;
+    color: #cc6600;
+}
+.tabel-filme .categorie {
+    background-color: #ccffff;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+    width: 160px;
+}
+
+.tabel-filme .titlu {
+    width: 140px;
+}
+
+.tabel-filme .gen {
+    width: 230px;
+}
+
+.tabel-filme .an {
+    width: 180px;
+}
+.lista-muzica {
+    background-color: lightyellow;
+    color: darkgreen;
+    width: 400px;
+    padding: 20px 40px;
+}
+
+.lista-muzica li {
+    margin-bottom: 10px;
+}
+
+.lista-muzica a {
+    color: darkgreen;
+}
+
+.lista-muzica a:hover {
+    color: red;
+}

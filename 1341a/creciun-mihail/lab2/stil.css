@@ -1,0 +1,24 @@
+.meniu {
+    padding: 10px;
+}
+
+.meniu-acasa {
+    background-color: #b8ffc7;
+}
+
+.meniu-filme {
+    background-color: #ffdada;
+}
+
+.meniu-muzici {
+    background-color: #d9d2e9;
+}
+
+.meniu a:hover {
+    color: #0800ff;
+}
+
+.meniu a.activ {
+    font-weight: bold;
+    text-decoration: none;
+}

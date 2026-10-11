@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+.meniu {
+    background-color: rgb(255, 179, 251);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.meniu a {
+    margin-right: 20px;
+    color: rgb(100, 0, 104);
+    text-decoration: none;
+}
+
+
+.meniu a:hover {
+    color: rgb(255, 0, 140);
+}
+
+
+.meniu a.activ {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.descriere {
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+}
+
+th,
+td {
+    border: 2px solid magenta;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(250, 168, 243);
+}
+
+td {
+    background-color: #ffe7fe;
+}
+
+
+
+.melodii {
+    background-color: rgba(182, 33, 182, 0.425);
+    color: darkblue;
+    padding: 20px 40px;
+    width: 400px;
+}
+
+.melodii li {
+    margin: 10px;
+}
+
+.melodii a {
+    color: darkblue;
+}
+
+.melodii a:hover {
+    color: red;
+}

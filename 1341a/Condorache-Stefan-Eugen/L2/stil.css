@@ -1,0 +1,41 @@
+.meniu {
+  padding: 10px;
+}
+
+.meniu-acasa {
+  background-color: Cornsilk;
+}
+
+.meniu-filme {
+  background-color: #d1ecf1;
+}
+
+.meniu-muzici {
+  background-color: #d4edda;
+}
+
+.meniu a:hover {
+  color: #c62828;
+}
+
+.activ {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.descriere {
+  background-color: yellow;
+  color: blue;
+  padding: 10px;
+}
+
+.categorie {
+  background-color: #ce93d8;
+  font-weight: bold;
+}
+
+.melodii {
+  background-color: #212121;
+  color: #ffffff;
+  padding: 12px 12px 12px 32px;
+}

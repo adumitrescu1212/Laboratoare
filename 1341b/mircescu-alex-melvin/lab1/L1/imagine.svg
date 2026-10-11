@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e44d26"/>
+      <stop offset="1" stop-color="#f16529"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="24" fill="url(#g)"/>
+  <text x="200" y="175" font-family="Arial, Helvetica, sans-serif" font-size="110" font-weight="bold" fill="#ffffff" text-anchor="middle">HTML</text>
+  <text x="200" y="235" font-family="Arial, Helvetica, sans-serif" font-size="28" fill="#ffffff" text-anchor="middle">Laboratorul 1</text>
+</svg>
