@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="ro">
-    <head>
-        <meta charset="UTF-8">
-        <title>Pagina principală</title> 
-    </head>
-    <body>
-        <h1>Laboratoarele mele</h1> 
-        <p>Programarea aplicațiilor web – Seria MIAI</p>
-    <li><a href="lab1/index.html">Laboratorul 1</a></li>
-    <li><a href="lab2/index.html">Laboratorul 2</a></li>
-    <li><a href="lab3/index.html">Laboratorul 3</a></li>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principală</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        ul.meniu-principal {
+            list-style-type: none; 
+            padding: 0;
+        }
+
+        ul.meniu-principal li {
+            margin-bottom: 15px;
+        }
+
+
+        ul.meniu-principal li a {
+            display: block; 
+            width: 200px; 
+            background-color: #3498db; 
+            color: white; 
+            text-align: center; 
+            padding: 12px 15px;
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s ease; 
+        }
+
+        
+        ul.meniu-principal li a:hover {
+            background-color: #2980b9; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Laboratoarele mele</h1> 
+    <p>Programarea aplicațiilor web – Seria MIAI</p>
+    
+    <!-- Lista neordonată cu laboratoarele -->
+    <ul class="meniu-principal">
+        <li><a href="lab1/index.html">Laboratorul 1</a></li>
+        <li><a href="lab2/index.html">Laboratorul 2</a></li>
+        <li><a href="lab3/index.html">Laboratorul 3</a></li>
+    </ul>
+</body>
 </html>
