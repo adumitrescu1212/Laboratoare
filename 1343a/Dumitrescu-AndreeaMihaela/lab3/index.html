@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorul 3 Stiluri CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
+        h1 {
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style-type: none; 
+            padding: 0;
+        }
+
+        li {
+            display: inline-block; 
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        li a {
+            display: inline-block;
+            width: 170px;              
+            text-align: center;
+            color: white;              
+            padding: 12px 15px;
+            text-decoration: none;    
+            border-radius: 6px;       
+            font-weight: bold;
+            transition: opacity 0.2s; 
+        }
+
+
+        li a:hover {
+            opacity: 0.8; 
+        }
+
+
+        .buton-indicatii { background-color: #e74c3c; } 
+        .buton-inline { background-color: #f39c12; }    
+        .buton-interne { background-color: #27ae60; }  
+        .buton-externe { background-color: #8e44ad; }  
+        .buton-inapoi { background-color: #34495e; }   
+    </style>
+</head>
+<body>
+    <h1>Laboratorul 3 stiluri CSS</h1>
+    
+    <ul>
+        <li><a href="FormtareText.html" class="buton-indicatii">Indicaţii</a></li>
+        <li><a href="FormtareText_inline.html" class="buton-inline">Stiluri inline</a></li>
+        <li><a href="FormtareText_internal.html" class="buton-interne">Stiluri interne</a></li>
+        <li><a href="FormtareText_external.html" class="buton-externe">Stiluri externe</a></li>
+        <li><a href="../index.html" class="buton-inapoi">Laboratoarele mele</a></li>
+    </ul>
+</body>
+</html>
