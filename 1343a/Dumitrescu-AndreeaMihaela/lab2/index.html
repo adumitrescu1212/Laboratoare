@@ -5,10 +5,30 @@
 <title>Laboratorul 2 - Acasă</title>
 <style>
 .meniu {
-    background-color: #FFE4B5; 
-    padding: 8px;
-    line-height: 1.5; 
+    background-color: #FFE4B5; /* Moccasin distinct pentru Acasă */
+    padding: 15px;
+    text-align: center; /* Le centrăm pe mijlocul paginii */
 }
+
+/* Transformăm linkurile din meniu în butoane așezate unul lângă altul */
+.meniu a {
+    display: inline-block;
+    background-color: #3498db; /* Culoarea butonului */
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px; /* Spațiu între butoane pe orizontală */
+    text-decoration: none; /* Fără subliniere */
+    border-radius: 5px; /* Colțuri rotunjite */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+/* Efect când treci cu mouse-ul peste ele */
+.meniu a:hover {
+    background-color: #2980b9; 
+}
+
 .descriere {
     background-color: yellow;
     color: blue;
@@ -17,25 +37,25 @@
 </style>
 </head>
 <body>
+
+<!-- Meniul cu butoanele unul lângă altul (fără <br>) -->
 <div class="meniu">
-<a href="index.html">Acasa</a>
-<br>
-<a href="filme.html">Preferinte TV</a>
-<br>
-<a href="muzici.html">Preferinte muzicale</a>
-<br><br>
-<a href="Laboratoare/1343a/Dumitrescu-AndreeaMihaela/index.html"> Laboratoarele mele</a>
-<br>
+    <a href="index.html">Acasa</a>
+    <a href="filme.html">Preferinte TV</a>
+    <a href="muzici.html">Preferinte muzicale</a>
+    <a href="../index.html">Laboratoarele mele</a>
+</div>
 <hr>
-</div>
+
 <div>
-<h1>Site-ul meu de laborator</h1>
-<p class="descriere">
-Acesta este site-ul realizat la laboratorul 2. Are trei pagini: pagina principala,
-o pagina cu filmele si serialele mele preferate si una cu melodiile preferate.
-</p>
-<a href="filme.html"><img src="img/filme.png" alt="Filme" width="120"></a>
-<a href="muzici.html"><img src="img/muzici.png" alt="Muzici" width="120"></a>
+    <h1>Site-ul meu de laborator</h1>
+    <p class="descriere">
+    Acesta este site-ul realizat la laboratorul 2. Are trei pagini: pagina principala,
+    o pagina cu filmele si serialele mele preferate si una cu melodiile preferate.
+    </p>
+    <a href="filme.html"><img src="img/filme.png" alt="Filme" width="120"></a>
+    <a href="muzici.html"><img src="img/muzici.png" alt="Muzici" width="120"></a>
 </div>
+
 </body>
 </html>
