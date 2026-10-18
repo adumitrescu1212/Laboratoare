@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+ <meta charset="UTF-8">
+ <title>Laboratorul 3 – Stiluri CSS</title>
+ <style>
+    #lista-meniu{
+        list-style-type:none;
+    }
+    #lista-meniu a{
+        color:white;
+        text-decoration:none;
+        border: 1px;
+        padding: 12px 24px;
+        border-radius: 10px;
+        display:block;
+    }
+    #lista-meniu li:nth-child(1) a {  background-color: blue;}
+    #lista-meniu li:nth-child(2) a {  background-color: red;}
+    #lista-meniu li:nth-child(3) a {  background-color: darkviolet;}
+    #lista-meniu li:nth-child(4) a {  background-color: orange;}
+    #lista-meniu li:nth-child(5) a {  background-color: green;}
+
+ </style>
+</head>
+<body>
+ <h1>Laboratorul 3 – stiluri CSS</h1>
+ <ul id="lista-meniu">
+    <li> <a href="FormtareText.html">Indicații</a> </li>
+    <li> <a href="FormtareText_inline.html">Stiluri inline</a> </li>
+    <li> <a href="FormtareText_internal.html">Stiluri interne</a> </li>
+    <li> <a href="FormtareText_external.html">Stiluri externe</a> </li>
+    <li> <a href="../index.html">Laboratoarele mele</a> </li>
+ </ul>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+ <meta charset="UTF-8">
+ <title>Laboratorul 3 – Stiluri CSS</title>
+    <style>
+        .list {
+            list-style-type: none;
+            background-color:plum;
+            border-radius:10px;
+            padding: 12px;
+            width: 300px;
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+         .list li {
+            border-radius: 8px;
+            overflow: hidden;
+
+            transition: transform 0.2s, box-shadow 0.2s;
+       }
+        .list a {
+            display: block;
+            padding: 12px 20px;
+
+            color: #241b2f;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+        .list li.b1 {
+            background-color: rebeccapurple
+        }
+        .list li.b2 {
+            background-color: palegreen
+        }
+        .list li.b3{
+            background-color:paleturquoise
+        }
+        .list li.b4{
+            background-color:papayawhip
+        }
+        .list li.b5{
+            background-color:palegoldenrod
+        }
+        .list li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .list a:focus-visible {
+           outline: 2px solid black;
+           outline-offset: -3px;
+       }
+
+    </style>
+</head>
+<body>
+ <h1>Laboratorul 3 – stiluri CSS</h1>
+ <ul class="list">
+     <li class="b1" ><a href="FormtareText.html">Indicații</a></li>
+     <li class="b2"><a  href="FormtareText_inline.html">Stiluri inline</a></li>
+     <li  class="b3"><a  href="FormtareText_internal.html">Stiluri interne</a></li>
+     <li class="b4"><a  href="FormtareText_external.html">Stiluri externe</a></li>
+     <li class="b5"><a  href="../index.html">Laboratoarele mele</a></li>
+ </ul>
+
+</body>
+</html>

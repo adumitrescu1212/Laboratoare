@@ -1,0 +1,41 @@
+.exercitii,
+.laboratoare {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.exercitii a,
+.laboratoare a {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.exercitii .inline {
+  background-color: #1565c0;
+}
+
+.exercitii .intern {
+  background-color: #2e7d32;
+}
+
+.exercitii .extern {
+  background-color: #6a1b9a;
+}
+
+.laboratoare a {
+  box-sizing: border-box;
+  width: 300px;
+  max-width: 100%;
+  background-color: #1565c0;
+}
+
+.laboratoare a:hover {
+  background-color: #0d47a1;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Stiluri in HTML - formatare text (Interne)</title>
+<style>
+header { background-color: GreenYellow; text-align: right; font-size: 14px; }
+#key { color: blue; background-color: yellow; text-align: center; font-family: verdana; font-size: 200%; }
+
+.titlu-albastru { font-family: 'Courier New', Courier, monospace; font-size: 14pt; color: blue; }
+.titlu-rosu { font-family: Arial, sans-serif; font-size: 12pt; color: red; }
+.paragraf-verde { font-family: 'Times New Roman', serif; font-size: 12pt; color: green; }
+
+.sectiune-galbena { background-color: yellow; font-family: Calibri, sans-serif; font-size: 12pt; color: blue; }
+.sectiune-galbena p { font-style: italic; } 
+
+.sectiune-albastra { background-color: blue; font-family: Arial, sans-serif; font-size: 10pt; color: white; }
+.sectiune-albastra p { font-variant: small-caps; } 
+
+footer { color: white; background-color: black; }
+</style>
+</head>
+<body>
+<header>
+<h2 style="text-align:center"> Indicatii</h2>
+<div id="key"> Atribute cheie: style, color, background-color, font-family, font-size, text-align
+<br><br>
+In acest fisier folositi atributele
+<br>
+<h1 style="text-align:center"> in Internal style sheet </h1>
+</div>
+</header>
+
+<h1 class="titlu-albastru"> Header - Courier 14, albastru </h1>
+<h2 class="titlu-rosu"> Header - Arial 12, rosu </h2>
+<p class="paragraf-verde">Paragraf - Times new roman, 12, verde <br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis justo mi, luctus tincidunt dapibus id, pulvinar et sapien. Maecenas magna ipsum, ullamcorper cursus malesuada vitae, condimentum in metus.
+</p>
+
+<div class="sectiune-galbena">
+  <h3>Sectiune cu fond galben si text Calibri 12 albastru</h3>
+  <p> Paragraf cu text italic <br /> Curabitur nec purus efficitur, tincidunt felis vitae, commodo tellus. Donec justo lectus, tincidunt sed massa non, tincidunt iaculis urna. Donec id tempor risus. Quisque fringilla pellentesque varius. Pellentesque vel porta odio, sed viverra eros. Pellentesque ultricies orci sed metus efficitur auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vitae ex mauris. Praesent nec ornare velit, ac maximus sem. In ornare arcu velit, ut aliquet augue suscipit vitae. Donec non orci ac augue rutrum posuere. Duis tristique justo nec mi bibendum, non fringilla lorem hendrerit. Cras nibh justo, luctus id purus nec, cursus eleifend sapien.</p>
+</div>
+
+<div class="sectiune-albastra">
+  <h1>Sectiune cu fond albastru si text Arial 10 alb</h1>
+  <p>Paragraf scris cu "small caps" <br /> Fusce ut lectus mollis, sagittis mi id, posuere sapien. Donec fermentum ex in urna pretium placerat sit amet ornare ex. Phasellus vel viverra diam. Sed consectetur eu ligula rhoncus rhoncus. Praesent consectetur gravida enim, rutrum malesuada erat lacinia sed. Nam ut sem sit amet turpis tempus fringilla eu a turpis. Pellentesque gravida scelerisque nisl quis ultrices. In aliquet nunc ligula.</p>
+</div>
+<footer>&copy an3-FSA 2017       text alb pe fond negru</footer>
+</body>
+</html>

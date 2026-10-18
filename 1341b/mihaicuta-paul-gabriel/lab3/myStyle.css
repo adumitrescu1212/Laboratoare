@@ -1,0 +1,54 @@
+header {
+    background-color: GreenYellow;
+    text-align: right;
+    font-size: 14px;
+}
+
+#key {
+    color: blue;
+    background-color: yellow;
+    text-align: center;
+    font-family: verdana;
+    font-size: 200%;
+}
+
+.contrazic {
+    background-color: rgb(127, 255, 76);
+}
+
+.h1-curier {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14pt;
+    color: blue;
+}
+
+.h2-arial {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    color: red;
+}
+
+.p-verde {
+    font-family: 'Times New Roman', serif;
+    font-size: 12pt;
+    color: green
+}
+
+.div-galben {
+    background-color: yellow;
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
+    color: blue
+}
+
+.div-albastru {
+    background-color: blue;
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
+    color: yellow
+}
+
+footer {
+    color: white;
+    background-color: black
+}

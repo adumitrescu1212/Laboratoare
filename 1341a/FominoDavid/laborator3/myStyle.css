@@ -1,0 +1,37 @@
+.h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size:14pt;
+    color:blue
+  }
+  .h2{
+    font-family:Arial, sans-serif;
+    font-size:12pt;
+    color:red
+  }
+  .paragraf{
+    font-family:'Times New Roman', serif; 
+    font-size:12pt; 
+    color:green
+  }
+  .paragrafsmallcaps{
+    font-variant:small-caps
+  }
+  .paragrafitalic{
+    font-style: italic;
+  }
+  .divgalben{
+    background-color:yellow; 
+    font-family:Calibri, sans-serif; 
+    font-size:12pt; 
+    color:blue
+  }
+  .divalbastru{
+    background-color:blue; 
+    font-family:Arial, sans-serif; 
+    font-size:10pt; 
+    color:white
+  }
+  .footeralb{
+    color:white; 
+    background-color:black
+  }

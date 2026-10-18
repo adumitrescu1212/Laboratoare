@@ -1,0 +1,7 @@
+.first_title { font-family:'Courier New', Courier, monospace; font-size:14pt; color:blue}
+.second_title { font-family:Arial, sans-serif; font-size:12pt; color:red }
+.first_paragraph { font-family:'Times New Roman', serif; font-size:12pt; color:green }
+.third_title { font-style:italic }
+.first_section { background-color:yellow; font-family:Calibri, sans-serif; font-size:12pt; color:blue }
+.second_section { background-color:blue; font-family:Arial, sans-serif; font-size:10pt; color:white }
+footer { color:white; background-color:black }

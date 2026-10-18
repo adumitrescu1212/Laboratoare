@@ -1,0 +1,52 @@
+h1 {
+        font-family: 'Courier New', monospace;
+        font-size: 14pt;
+        color: blue;  
+    }
+
+    h2 {
+        font-family: Arial, sans-serif;
+        font-size: 12pt;
+        color: red;
+    }
+
+    p {
+        font-family: 'Times New Roman', serif;
+        font-size: 12pt;
+        color: green;
+    }
+
+    .galben {
+        background-color: yellow;
+        font-family: Calibri, sans-serif;
+        font-size: 12pt;
+        color: blue;
+    }
+
+    .galben p {
+        font-style: italic;
+        color: blue;
+    }
+
+    .albastru {
+        background-color:rgb(70, 70, 163);
+        font-family: Arial, sans-serif;
+        font-size: 10pt;
+        color: white;
+    }
+
+    .albastru p {
+        font-variant: small-caps;
+        color: white;
+    }
+
+    .albastru h1 {
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    color: white;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+    }

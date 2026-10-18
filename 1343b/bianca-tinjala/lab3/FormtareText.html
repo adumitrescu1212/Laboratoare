@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Bonus Prioritate</title>
+
+    <!-- Regula externa -->
+    <link rel="stylesheet" href="myStyle.css">
+
+    <!-- Regula interna -->
+    <style>
+        .verde {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Regula inline -->
+    <p class="verde" style="color: purple;">
+        Paragraf - Times new roman, 12, verde
+    </p>
+
+    <!-- 
+        CONCLUZIE PRIORITATE CSS:
+        1. Cel mai puternic este stilul INLINE (style="..."), castigand culoarea mov (purple).
+        2. Daca stergem stilul inline, castiga regula scrisa ultima in document intre <link> si <style>. Daca <style> e dedesubt, textul devine portocaliu; daca mutam <style> deasupra lui <link>, textul devine verde.
+        
+        Ierarhia: style inline > stil intern / extern (in functie de ordinea din cod).
+    -->
+
+</body>
+</html>

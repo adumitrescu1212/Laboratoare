@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Stiluri Interne</title>
+
+    <style>
+        .header-courier {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14pt;
+            color: #8E44AD;
+        }
+
+        .header-arial {
+            font-family: Arial, sans-serif;
+            font-size: 12pt;
+            color: #FF8C42;
+        }
+
+        .paragraf-times {
+            font-family: 'Times New Roman', serif;
+            font-size: 12pt;
+            color: #145A32;
+        }
+
+        .sectiune-galbena {
+            background-color: #A9DFBF;
+            font-family: Calibri, sans-serif;
+            font-size: 12pt;
+            color: #6C3483;
+        }
+
+        /* Selector de descendent pentru paragraful din sectiunea verde */
+        .sectiune-galbena p {
+            font-style: italic;
+        }
+
+        .sectiune-albastra {
+            background-color: #34495E;
+            font-family: Arial, sans-serif;
+            font-size: 10pt;
+            color: #F7DC6F;
+        }
+
+        /* Selector de descendent pentru paragraful din sectiunea gri-albastruie */
+        .sectiune-albastra p {
+            font-variant: small-caps;
+        }
+
+        .footer-style {
+            color: white;
+            background-color: #6C3483;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="header-courier">Header Courier 14, mov</h1>
+
+    <h2 class="header-arial">Header Arial 12, portocaliu</h2>
+
+    <p class="paragraf-times">
+        Paragraf Times New Roman, 12, verde inchis
+        <br> Lorem ipsum ...
+    </p>
+
+    <div class="sectiune-galbena">
+        <h3>Sectiune cu fond verde mentă si text Calibri 12 mov</h3>
+        <p>Paragraf cu text italic <br /> Curabitur ...</p>
+    </div>
+
+    <div class="sectiune-albastra">
+        <h1>Sectiune cu fond gri-albastrui si text Arial 10 galben</h1>
+        <p>Paragraf scris cu "small caps" <br /> Fusce ...</p>
+    </div>
+
+    <footer class="footer-style">
+        &copy; an3-FSA 2017...
+    </footer>
+</body>
+</html>

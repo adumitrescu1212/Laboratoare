@@ -2,32 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="stil.css">
     <title>Preferinte TV</title>
-    <style>
-        
-        .descriereTabel {
-            border: 2px solid magenta;
-            padding: 0px;
-            text-align: center;
-            width: 500px;
-            background-color:aqua;
-            table-layout:fixed;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 2px solid magenta;
-            background-color: aquamarine; 
-        }
-        .meniu {
-            background-color: gold;
-        }
-    </style>
 </head>
-<body>
+<body class="pagina-filme">
 <div class="meniu">
 <a href="index.html">Acasa</a>
 <br>
-<a href="filme.html">Preferinte TV</a>
+<a href="filme.html" class="activ" aria-current="page">Preferinte TV</a>
 <br>
 <a href="muzici.html">Preferinte muzicale</a>
 <br>
@@ -35,30 +17,32 @@
 </div>
 <div>
     <h1>Filme si seriale</h1>
-    <table class="descriereTabel">
+
+    <table class="descriereTabel tabelFilme">
         <tr>
-            <th style="background-color:aqua"></th>
-            <th style="background-color:aqua">Ziua</th>
-            <th style="background-color:aqua">Post TV</th>
-            <th style="background-color:aqua">Emisiune</th>
+            <th></th>
+            <th>Ziua</th>
+            <th>Post TV</th>
+            <th>Emisiune</th>
         </tr>
         <tr>
-            <th rowspan="3" style="background-color:aqua">Emisiuni TV preferate </th>
-            <th>Luni</th>
-            <th>Post TV 1</th>
-            <th>Emisiune 1</th>
+            <th rowspan="3">Emisiuni TV preferate</th>
+            <td>Luni</td>
+            <td>Post TV 1</td>
+            <td>Emisiune 1</td>
         </tr>
         <tr>
-            <th>Marti</th>
-            <th>Post TV 2</th>
-            <th>Emisune 2</th>
+            <td>Marti</td>
+            <td>Post TV 2</td>
+            <td>Emisiune 2</td>
         </tr>
         <tr>
-            <th>Miercuri</th>
-            <th>Post TV 3</th>
-            <th>Emisune 3</th>
+            <td>Miercuri</td>
+            <td>Post TV 3</td>
+            <td>Emisiune 3</td>
         </tr>
     </table>
+
 </div>
 
 </body>

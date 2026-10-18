@@ -1,0 +1,13 @@
+.meniu {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.meniu a:hover {
+    color: red;
+}
+
+.meniu .active {
+    font-weight: bold;
+    text-decoration: none;
+}

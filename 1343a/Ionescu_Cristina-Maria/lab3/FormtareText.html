@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Stiluri în HTML - formatare text</title>
+
+
+<style>
+    header { background-color: GreenYellow; text-align: right; font-size: 14px; }
+    #key { color: blue; background-color: yellow; text-align: center; font-family: verdana; font-size: 200%; }
+    
+    
+    .paragraf-principal {
+        color: orange;
+    }
+</style>
+
+
+<link rel="stylesheet" href="myStyle.css">
+</head>
+<body>
+<header>
+<h2 style="text-align:center">Indicații</h2>
+<div id="key"> Atribute cheie: style, color, background-color, font-family, font-size, text-align
+<br><br>
+Atributele pot fi folosite
+<br>
+<ol style="text-align:left"> 
+    <li>inline</li>
+    <li>intern</li>
+    <li>extern</li>
+</ol>
+Folosiți, în celelalte 3 fișiere, modalitățile indicate în fiecare pentru a realiza cerințele precizate în textele ajutătoare
+</div>
+</header>
+
+<h1 class="titlu-principal">Header - Courier 14, albastru</h1>
+<h2 class="titlu-secundar">Header - Arial 12, roșu</h2>
+
+
+<p class="paragraf-principal" style="color: purple;">
+Paragraf - Times new roman, 12, verde <br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis justo mi, luctus tincidunt dapibus id, pulvinar et sapien. Maecenas magna ipsum, ullamcorper cursus malesuada vitae, condimentum in metus.
+</p>
+
+<div class="sectiune-galben">
+   <h3>Secțiune cu fond galben și text Calibri 12 albastru</h3>
+   <p>Paragraf cu text italic <br /> Curabitur nec purus efficitur, tincidunt felis vitae, commodo tellus. Donec justo lectus, tincidunt sed massa non, tincidunt iaculis urna. Donec id tempor risus. Quisque fringilla pellentesque varius. Pellentesque vel porta odio, sed viverra eros. Pellentesque ultricies orci sed metus efficitur auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vitae ex mauris. Praesent nec ornare velit, ac maximus sem. In ornare arcu velit, ut aliquet augue suscipit vitae. Donec non orci ac augue rutrum posuere. Duis tristique justo nec mi bibendum, non fringilla lorem hendrerit. Cras nibh justo, luctus id purus nec, cursus eleifend sapien.</p>
+</div>
+
+<div class="sectiune-albastru">
+   <h1>Secțiune cu fond albastru și text Arial 10 alb</h1>
+   <p>Paragraf scris cu "small caps" <br /> Fusce ut lectus mollis, sagittis mi id, posuere sapien. Donec fermentum ex in urna pretium placerat sit amet ornare ex. Phasellus vel viverra diam. Sed consectetur eu ligula rhoncus rhoncus. Praesent consectetur gravida enim, rutrum malesuada erat lacinia sed. Nam ut sem sit amet turpis tempus fringilla eu a turpis. Pellentesque gravida scelerisque nisl quis ultrices. In aliquet nunc ligula.</p>
+</div>
+
+<footer>&copy an3-FSA 2017 &nbsp;&nbsp;&nbsp;&nbsp; text alb pe fond negru</footer>
+
+<!-- Observațiile făcute -->
+<!-- 
+  Ordinea de prioritate a stilurilor constatată:
+  1. Stilul inline (atributul style="color: purple;") are prioritate maximă (textul devine mov).
+  2. Dacă ștergem stilul inline, se aplică regula din blocul <style> (portocaliu), deoarece blocul <style> este plasat după linia <link> în <head> și suprascrie stilul extern din myStyle.css (verde).
+  3. Dacă mutăm blocul <style> înaintea etichetei <link>, stilul extern din myStyle.css va câștiga și textul va deveni verde.
+-->
+</body>
+</html>

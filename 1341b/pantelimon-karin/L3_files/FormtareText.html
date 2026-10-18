@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Stiluri in HTML - formatare text</title>
+    <style>
+        header {background-color:GreenYellow;text-align:right;font-size:14px}
+        #key {color:blue;background-color:yellow;text-align:center; font-family:verdana; font-size:200%}
+        
+        .verde { color: orange; }
+    </style>
+
+    <!-- Legătură către fișierul extern myStyle.css (Verde) -->
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+</head>
+<body>
+<header>
+<h2 style="text-align:center"> Indicatii</h2>
+<div id="key"> Atribute cheie: style, color, background-color, font-family, font-size, text-align
+<br><br>
+Atributele pot fi folosite
+<br>
+<ol style="text-align:left"> 
+  <li> inline </li>
+  <li> intern </li>
+  <li> extern </li>
+</ol>
+Folositi, in celelalte 3 fisiere, modalitatile indicate in fiecare pentru a realiza cerintele precizate in textele ajutatoare
+</div>
+</header>
+
+<h1> Header - Courier 14, albastru </h1>
+<h2> Header - Arial 12, rosu </h2>
+
+<!-- Paragraful cu cele trei reguli de culoare concurente:
+     1. Clasa .verde din myStyle.css (Legat în <head>) -> verde
+     2. Clasa .verde din blocul <style> -> portocaliu
+     3. Atributul style inline -> mov
+-->
+<p class="verde" style="color: purple;">Paragraf - Times new roman, 12, verde <br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis justo mi, luctus tincidunt dapibus id, pulvinar et sapien. Maecenas magna ipsum, ullamcorper cursus malesuada vitae, condimentum in metus.
+</p>
+
+<div>
+  <h3>Sectiune cu fond galben si text Calibri 12 albastru</h3>
+  <p> Paragraf cu text italic <br /> Curabitur nec purus efficitur, tincidunt felis vitae, commodo tellus. Donec justo lectus, tincidunt sed massa non, tincidunt iaculis urna. Donec id tempor risus. Quisque fringilla pellentesque varius. Pellentesque vel porta odio, sed viverra eros. Pellentesque ultricies orci sed metus efficitur auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vitae ex mauris. Praesent nec ornare velit, ac maximus sem. In ornare arcu velit, ut aliquet augue suscipit vitae. Donec non orci ac augue rutrum posuere. Duis tristique justo nec mi bibendum, non fringilla lorem hendrerit. Cras nibh justo, luctus id purus nec, cursus eleifend sapien.</p>
+</div>
+
+<div>
+  <h1>Sectiune cu fond albastru si text Arial 10 alb</h1>
+  <p>Paragraf scris cu "small caps" <br /> Fusce ut lectus mollis, sagittis mi id, posuere sapien. Donec fermentum ex in urna pretium placerat sit amet ornare ex. Phasellus vel viverra diam. Sed consectetur eu ligula rhoncus rhoncus. Praesent consectetur gravida enim, rutrum malesuada erat lacinia sed. Nam ut sem sit amet turpis tempus fringilla eu a turpis. Pellentesque gravida scelerisque nisl quis ultrices. In aliquet nunc ligula.</p>
+</div>
+
+<footer>&copy an3-FSA 2017 text alb pe fond negru</footer>
+
+<!-- Comentariu HTML cu ordinea de prioritate constatată -->
+<!--
+ORDINEA DE PRIORITATE CONSTATATĂ (Cascadarea CSS):
+
+1. Initial (cu toate cele 3 reguli active):
+   - Culoarea afișată este MOV.
+   - Cauză: Stilul inline (atributul `style="..."`) are cea mai mare specificitate și le suprascrie pe cele din <head>.
+
+2. Dupa ștergerea atributului style inline (style="color: purple;"):
+   - Culoarea afișată este VERDE.
+   - Cauză: La specificitate egală (ambele folosesc clasa .verde), regula declarată ulterior în cod are prioritate. 
+     Deoarece <link> este plasat DUPĂ <style>, stilul extern (verde) îl suprascrie pe cel intern (portocaliu).
+
+3. Dupa mutarea blocului <style> DUPĂ fișierul <link>

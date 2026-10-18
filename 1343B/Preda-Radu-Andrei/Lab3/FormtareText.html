@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <title>Prioritate Stiluri CSS</title>->
+  <link rel="stylesheet" type="text/css" href="myStyle.css">
+  <style>
+    .verde {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <p class="verde" style="color: purple;">
+    Paragraf – Times new roman, 12, verde <br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+
+  <!--
+  1. Cea mai mare prioritate îl are stilul inline (cu atributul style pus direct pe tag); textul a aparut mov si a ignorat orice regula externa/interna.
+  2. Dacă elimin stilul inline, prioritatea între stilul intern și stilul extern este data de ordinea lor de incarcare in document:
+     -daca <style> este dupa <link>, culoarea afisata este portocaliu.
+     - daca <link> este pus dupa <style>, culoarea afisata este verde. -->
+
+</body>
+</html>

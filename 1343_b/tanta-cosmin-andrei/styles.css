@@ -69,3 +69,21 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+.lista-meniu-principal{
+        list-style-type:none;
+    }
+.lista-meniu-principal a{
+        color:white;
+        text-decoration:none;
+        border: 1px;
+        padding: 12px 24px;
+        border-radius: 10px;
+        background-color:cadetblue;
+        display:block;
+        text-align: center;
+    }
+
+.lista-meniu-principal a:hover{
+    background-color: darkblue;
+}
