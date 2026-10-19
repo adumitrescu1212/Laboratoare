@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_C1</title>
+<style>
 
+    #hd {
+        font-variant: small-caps;
+        color: magenta;
+    }
+    h1, caption {
+        color: blue;
+        background-color: #cccc00;
+    }
+    body {
+        background-color: #ffffcc;
+    }
+    .center, p {
+        text-align: center;
+        color: red;
+    }
+
+    /* Exercitiul 4 & 6: chenare verzi, contopite si spatiu generos in celule */
+    table, th, td {
+        border: 2px solid green;
+        border-collapse: collapse;
+        padding: 15px;
+    }
+
+    /* Exercitiul 6: titlu alb, mare, pe fond portocaliu */
+    caption {
+        color: white;
+        background-color: orange;
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    /* Exercitiul 6: antet pe fond magenta */
+    th {
+        background-color: magenta;
+    }
+
+    /* Exercitiul 6: celule portocalii */
+    td {
+        background-color: orange;
+    }
+
+    /* Exercitiul 6: celulele cu numele echipelor magenta, ingrosate si centrate */
+    td[rowspan] {
+        background-color: magenta;
+        font-weight: bold;
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+
+<h1 id="hd">Tabel special</h1>
+<p>Un tabel cu "celule lipite"
+</p> 
+<table style="width:100%">
+<caption>Echipe si hobby-uri</caption>
+  <tr>
+    <th>Echipa</th>
+    <th>Nume</th>
+    <th colspan="2">Pasiuni</th>
+  </tr>
+  <tr>
+    <td rowspan="3">Munte</td>
+    <td>Popescu</td>
+    <td>calatorii</td>
+    <td>filatelie</td>
+  </tr>
+  <tr>
+    <td>Ionescu</td>
+    <td>planorism</td>
+    <td>sah</td>
+  </tr>
+  <tr>
+    <td>Radu</td>
+    <td>alpinism</td>
+    <td>fotografie</td>
+  </tr>
+  <tr>
+    <td rowspan="4">Mare</td>
+    <td>Georgescu</td>
+    <td>plaja</td>
+    <td>dans</td>
+  </tr>
+  <tr>
+    <td>Gigescu</td>
+    <td>surf</td>
+    <td>samba</td>
+  </tr>
+  <tr>
+    <td>Mintescu</td>
+    <td>politica</td>
+    <td>delicateturi</td>
+  </tr>
+  <tr>
+    <td>Vasilescu</td>
+    <td>inot</td>
+    <td>volei</td>
+  </tr>
+</table>
+
+<!--
+Analiza Exercitiul 4:
+Initial, tabelul nu avea nicio regula CSS pentru table, th sau td, motiv pentru 
+care celulele nu aveau chenare sau spatiu interior (padding), iar structura cu 
+celule unite pe coloane (colspan="2") si pe randuri (rowspan) era greu de urmarit.
+-->
+</body>
+</html>
