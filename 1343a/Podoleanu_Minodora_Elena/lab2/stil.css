@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.meniu {
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.meniu a {
+  margin-right: 15px;
+  color: darkblue;
+}
+
+.meniu a:hover {
+  color: crimson;
+}
+
+.activ {
+  font-weight: bold;
+  text-decoration: none;
+}

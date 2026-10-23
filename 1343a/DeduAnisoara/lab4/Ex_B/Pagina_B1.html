@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_B1</title>
+<style>
+    body {
+        background-color: #ffffcc;
+    }
+    .center {
+        text-align: center;
+        color: white;
+    }
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    .centre {
+        border: 5px solid blue;
+        padding: 15px;
+    }
+    #s1 {
+        background-color: #00cc66;
+    }
+    #s2 {
+        background-color: yellow;
+    }
+    div {
+        color: blue;
+    }
+</style>
+</head>
+<body>
+
+<h1 class="center">Tabele formatate</h1>
+
+<div id="s1">
+<table style="width:100%; background-color: blue;" class="center">
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+</table>
+<br>
+</div> 
+
+<div id="s2" style="width:50%">
+<br>
+<table style="width:100%">
+    <tr>
+        <th class="centre">Firstname</th>
+        <th class="centre">Lastname</th>
+        <th class="centre">Age</th>
+    </tr>
+    <tr>
+        <td class="centre">Jill</td>
+        <td class="centre">Smith</td>
+        <td class="centre">50</td>
+    </tr>
+    <tr>
+        <td class="centre">Eve</td>
+        <td class="centre">Jackson</td>
+        <td class="centre">94</td>
+    </tr>
+</table>
+</div> 
+
+</body>
+</html>
+<!-- 
+  EXPLICATIE 
+  
+  1. De ce au tabelele fundaluri diferite ?
+     - Niciun tabel nu are o culoare de fundal definita direct, dar ambele sunt 
+       incorporate in elemente <div> diferite. 
+     - Primul tabel preia vizual fundalul verde al div-ului cu id="s1",
+       iar al doilea preia fundalul galben al div-ului cu id="s2".
+       
+  2. De ce arata celulele celui de-al doilea tabel diferit?
+     - Deoarece clasa ".centre" (care adauga chenar gros de 5px și padding) 
+       a fost aplicata doar selectiv pe anumite elemente <th> și <td>, nu pe toate.
+       Pentru a le uniformiza, clasa a fost adăugata pe fiecare celula.
+-->

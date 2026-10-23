@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Echipe și pasiuni</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 24px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 3px solid green;
+            width: 85%;
+            margin-top: 20px;
+        }
+
+        caption {
+            color: white;
+            background-color: orange;
+            font-size: 28px;
+            font-weight: bold;
+            padding: 14px;
+        }
+
+        th {
+            background-color: magenta;
+            color: white;
+            border: 3px solid green;
+            padding: 16px;
+        }
+
+        td {
+            background-color: orange;
+            border: 3px solid green;
+            padding: 16px;
+        }
+
+        .echipa {
+            background-color: magenta;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Laboratorul 4 – Tabele HTML și CSS</h1>
+
+    <p>
+        Acest tabel prezintă membrii echipelor și câte două
+        pasiuni pentru fiecare membru.
+    </p>
+
+    <table>
+        <caption>Echipe și pasiuni</caption>
+
+        <tr>
+            <th>Echipa</th>
+            <th>Nume</th>
+            <th colspan="2">Pasiuni</th>
+        </tr>
+
+        <tr>
+            <td class="echipa" rowspan="3">Munte</td>
+            <td>Popescu</td>
+            <td>Călătorii</td>
+            <td>Filosofie</td>
+        </tr>
+
+        <tr>
+            <td>Ionescu</td>
+            <td>Planorism</td>
+            <td>Șah</td>
+        </tr>
+
+        <tr>
+            <td>Marinescu</td>
+            <td>Drumeții</td>
+            <td>Fotografie</td>
+        </tr>
+
+        <tr>
+            <td class="echipa" rowspan="4">Mare</td>
+            <td>Georgescu</td>
+            <td>Plajă</td>
+            <td>Dans</td>
+        </tr>
+
+        <tr>
+            <td>Gigescu</td>
+            <td>Surf</td>
+            <td>Samba</td>
+        </tr>
+
+        <tr>
+            <td>Mintescu</td>
+            <td>Politică</td>
+            <td>Delicateturi</td>
+        </tr>
+
+        <tr>
+            <td>Petrescu</td>
+            <td>Înot</td>
+            <td>Muzică</td>
+        </tr>
+    </table>
+
+    <a href="../../index.html">Inapoi la laborator</a>
+
+</body>
+</html>
