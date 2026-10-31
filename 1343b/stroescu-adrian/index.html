@@ -2,15 +2,49 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
-  <title>Stroescu Adrian– laboratoare</title>
+  <title>Stroescu Adrian – laboratoare</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+    }
+
+    ul.meniu-laboratoare {
+        list-style-type: none;
+        padding: 0;
+        margin: 20px 0;
+        display: flex;
+        gap: 15px;
+    }
+
+    ul.meniu-laboratoare a {
+        display: block;
+        width: 170px;
+        text-align: center;
+        padding: 12px 0;
+        background-color: #2b7a78;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    ul.meniu-laboratoare a:hover {
+        background-color: #e36414;
+    }
+  </style>
 </head>
 <body>
   <h1>Stroescu Adrian</h1>
   <p>Programarea aplicațiilor web – subgrupa 1343B</p>
 
   <h2>Laboratoare</h2>
-  <ul>
-    <li><a href="lab1/">Laboratorul 1 – HTML</a></li>
+  <ul class="meniu-laboratoare">
+    <li><a href="lab1/index.html">Laboratorul 1</a></li>
+    <li><a href="l2/index.html">Laboratorul 2</a></li>
+    <li><a href="lab3/index.html">Laboratorul 3</a></li>
+    <li><a href="lab4/index.html">Laboratorul 4</a></li>
   </ul>
 </body>
 </html>

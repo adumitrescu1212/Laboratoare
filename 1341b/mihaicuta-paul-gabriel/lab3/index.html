@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Laboratorul 3 – Stiluri CSS</title>
+
+    <style>
+      .lista-butoane {
+        list-style-type: none;
+        gap: 15px;
+        display: flex;
+        padding: 0;
+        margin: 0;
+      }
+
+      .buton-link {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-family: sans-serif;
+        font-weight: bold;
+        transition: background-color 0.2s ease;
+      }
+
+      .albastru {
+        background-color: #007bff;
+      }
+
+      .verde {
+        background-color: #28a745;
+      }
+
+      .rosu {
+        background-color: #dc3545;
+      }
+
+      .galben {
+        background-color: rgb(175, 175, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Laboratorul 3 – stiluri CSS</h1>
+    <ul class="lista-butoane">
+      <li>
+        <a class="buton-link albastru" href="FormtareText.html">Indicații</a>
+      </li>
+      <li>
+        <a class="buton-link verde" href="FormtareText_inline.html"
+          >Stiluri inline</a
+        >
+      </li>
+      <li>
+        <a class="buton-link rosu" href="FormtareText_internal.html"
+          >Stiluri interne</a
+        >
+      </li>
+      <li>
+        <a class="buton-link galben" href="FormtareText_external.html"
+          >Stiluri externe</a
+        >
+      </li>
+      <li><a class="buton-link" href="../index.html">Laboratoarele mele</a></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_B1</title>
+<style>
+    body {
+        background-color: #ffffcc;
+    }
+.center {
+  text-align: center;
+  color: white;
+}
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.centre {
+border: 5px solid blue;
+ padding: 15px;
+}
+#s1 {
+background-color: #00cc66;
+}
+#s2 {
+background-color: yellow;
+}
+div {
+color:blue;
+}
+#s2 table th, 
+#s2 table td {
+    border: 3px solid blue;
+    padding: 12px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1 class="center">Tabele formatate</h1>
+<div id="s1">
+<table style="width:100%; background-color: rgb(27, 116, 223);" class="center">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<br>
+</div> 
+<div id="s2" style="width:50%">
+<br>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+</div> 
+
+<!-- 
+Explicații:
+-tabelele au fundaluri diferite deoarece sunt transparente și lasă să se vadă 
+culoarea div-ului părinte (#s1 este verde, #s2 este galben).
+-celulele din al doilea tabel arătau diferit deoarece clasa era aplicată doar selectiv;
+ aspectul a fost uniformizat prin aplicarea stilurilor pe toate celulele din #s2.
+-->
+</body>
+</html>

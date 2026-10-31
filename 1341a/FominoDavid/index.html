@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
+    <style>
+        .button{
+            background-color: burlywood;
+            color: black;
+            border-radius: 8px;
+            text-decoration: none;
+            text-shadow: 0.5px 0.5px 0.5px black;
+            text-align: center;
+            border: 0;
+            line-height: 2;
+            padding: 5px;
+            
+        }
+        .button:hover{
+            background-color: blueviolet;
+        }
+    </style>
  <meta charset="UTF-8">
  <title>Pagina principală</title>
 </head>
 <body>
  <h1>Laboratoarele mele</h1>
  <p>Programarea aplicațiilor web – Seria MIAI</p>
- <a href="laborator1/">Laboratorul 1 - HTML</a>
- <br>
- <a href="laborator2/">Laboratorul 2 - HTML si CSS</a>
+    <ul>
+        <li><a class = "button" href="laborator1/">Laboratorul 1 - HTML</a></li>
+        <br>
+        <li><a class = "button" href="laborator2/">Laboratorul 2 - HTML si CSS</a></li>
+        <br>
+       <li><a class = "button" href="laborator3/">Laboratorul 3 - Publicare site si CSS</a></li>
+        <br>
+        <li><a class = "button" href="laborator4/">Laboratorul 4 - CSS</a></li>
+    </ul>
 </body>
 </html>

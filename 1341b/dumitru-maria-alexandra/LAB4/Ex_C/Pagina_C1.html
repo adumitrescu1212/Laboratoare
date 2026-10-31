@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_C1</title>
+<style>
+    #hd {
+        font-variant: small-caps;
+        color: magenta;
+    }
+    
+    h1 {
+        color: blue;
+        background-color: #cccc00;
+    }
+    
+    body {
+        background-color: #ffffcc;
+    }
+    
+    .center, p {
+        text-align: center;
+        color: red;
+    }
+    
+    table, th, td {
+        border: 2px solid green; 
+        border-collapse: collapse;
+        padding: 15px; 
+    }
+
+    caption {
+        color: white;
+        font-size: x-large;
+        background-color: orange;
+        padding: 10px;
+    }
+
+    th {
+        background-color: magenta;
+    }
+
+    td {
+        background-color: orange;
+    }
+
+    .nume-echipa {
+        background-color: magenta;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h1 id="hd">Tabel special</h1>
+<p>Un tabel cu "celule lipite"</p> 
+<table style="width:100%">
+<caption>Echipe si hobby-uri</caption>
+  <tr>
+    <th>Echipa</th>
+    <th>Nume</th>
+    <th colspan="2">Pasiuni</th>
+  </tr>
+  
+  <tr>
+    <td rowspan="3" class="nume-echipa">Munte</td> 
+    <td>Popescu</td>
+    <td>calatorii</td>
+    <td>filatelie</td>
+  </tr>
+  <tr>
+    <td>Ionescu</td>
+    <td>planorism</td>
+    <td>sah</td>
+  </tr>
+  <tr> 
+    <td>Vasilescu</td>
+    <td>alpinism</td>
+    <td>fotografie</td>
+  </tr>
+  
+  <tr>
+    <td rowspan="4" class="nume-echipa">Mare</td> 
+    <td>Georgescu</td>
+    <td>plaja</td>
+    <td>dans</td>
+  </tr>
+  <tr>
+    <td>Gigescu</td>
+    <td>surf</td>
+    <td>samba</td>
+  </tr>
+  <tr>
+    <td>Mintescu</td>
+    <td>politica</td>
+    <td>delicateturi</td>
+  </tr>
+  <tr> 
+    <td>Marinescu</td>
+    <td>inot</td>
+    <td>pescuit</td>
+  </tr>
+</table>
+
+<!-- 
+Exercitiul 4:
+Pentru a imbunatati lizibilitatea tabelului, am adaugat border: 1px solid black; (pentru chenare intre celule),
+border-collapse: collapse; (pentru a contopi chenarele intr-o singura linie)
+padding: 10px; (pentru a crea spatiu intre text si chenar)
+
+Exercitiul 5:
+Am adaugat cate un rand nou (<tr>) la finalul fiecarei echipe cu datele noului membru si cele doua pasiuni.
+Pentru ca celulele cu numele echipelor sa cuprinda toti membrii, am crescut valoarea atributului rowspan cu 1 pentru fiecare.
+
+Exercitiul 6:
+Am scos elementul caption din regula comuna cu h1 si i-am adaugat propriile reguli (text alb, font mare, fundal portocaliu).
+Am schimbat culoarea chenarelor in verde si am marit spatiul interior (padding: 15px).
+Am setat fundalul antetului (th) pe magenta si al celulelor obisnuite (td) pe portocaliu.
+Am creat o clasa .nume-echipa aplicata pe celulele cu "Munte" si "Mare" pentru a le da un fundal magenta, a le ingrosa textul si a-l centra.
+-->
+
+</body>
+</html>

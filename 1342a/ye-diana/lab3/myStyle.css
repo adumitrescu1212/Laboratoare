@@ -1,0 +1,9 @@
+.clasa_h1 {font-family:'Courier New', Courier, monospace; font-size:14pt; color:blue}
+.clasa_h2 {font-family:Arial, sans-serif; font-size:12pt; color:red}
+.div1{background-color:yellow; font-family:Calibri, sans-serif; font-size:12pt; color:blue}
+.div1 p {font-style:italic}
+.div2 {background-color:blue; font-family:Arial, sans-serif; font-size:10pt; color:white}
+.div2 p {font-variant:small-caps}
+.div2 h1 {font-family:'Courier New', Arial, monospace; font-size:10pt; color:white}
+.par{font-family:'Times New Roman', serif; font-size:12pt; color:green}
+.footer1{color:white; background-color:black}

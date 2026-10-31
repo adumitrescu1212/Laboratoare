@@ -1,0 +1,71 @@
+header {
+    background-color: GreenYellow;
+    text-align: right;
+    font-size: 14px;
+}
+
+#key {
+    color: blue;
+    background-color: yellow;
+    text-align: center;
+    font-family: verdana;
+    font-size: 200%;
+}
+
+.titlu-indicatii,
+.titlu-external {
+    text-align: center;
+}
+
+.hdr-courier {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14pt;
+    color: blue;
+}
+
+.hdr-arial {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    color: red;
+}
+
+.p-tnr {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    color: green;
+}
+
+.sec-galben {
+    background-color: yellow;
+}
+.sec-galben h3 {
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
+    color: blue;
+}
+.sec-galben p {
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
+    color: blue;
+    font-style: italic;
+}
+
+.sec-albastru {
+    background-color: blue;
+}
+.sec-albastru h1 {
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    color: white;
+}
+.sec-albastru p {
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    color: white;
+    font-variant: small-caps;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}

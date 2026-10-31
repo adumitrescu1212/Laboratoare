@@ -1,0 +1,45 @@
+  .descriere {
+        background-color: yellow;
+        color:blue;
+        padding: 10px;
+    }
+     
+     table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  table, th, td {
+    border: 2px solid #c00060;
+  }
+  
+  th {
+    background-color: #e3f2fd;
+    padding: 10px;
+  }
+  
+  td {
+    background-color: #f1f8e9;
+    padding: 10px;
+  }
+   
+    .film{
+        background-color: #e3f2fd;
+    padding: 10px;
+    }
+     ol {
+    color: #c00060;
+    background-color: #f1f8e9;
+    padding: 20px;
+  }
+  .meniu a:hover {
+  color: #d81b60;
+}
+
+.meniu a.activ {
+  font-weight: bold;
+  text-decoration: none;
+  color: #333333;
+}
+
+ 

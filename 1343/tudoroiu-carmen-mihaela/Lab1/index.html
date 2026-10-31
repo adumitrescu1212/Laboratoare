@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina principală</title>
+    <style>
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .b1, .b2, .b3, .b4 {
+            float: left;
+            list-style: none;
+            text-align: center;
+            margin-right: 30px;
+            width: 150px;
+            line-height: 60px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .b1 { background-color: #000000; }
+        .b2 { background-color: purple; }
+        .b3 { background-color: cyan; }
+        .b4{
+            background-color: #6a0dad;
+        }
+
+        li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: white;
+        }
+
+        .b3 a {
+            color: #000000; 
+        }
+
+        .b1:hover {
+            background-color: #333333;
+        }
+
+        .b2:hover {
+            background-color: #6a0dad;
+        }
+
+        .b3:hover {
+            background-color: #7fffd4;
+        }
+        .b4:hover{
+            background-color:#340655;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laboratoarele mele</h1>
+    <p>Programarea aplicațiilor web – Seria MIAI</p>
+    <ul>
+        <li class="b1"><a href="L1/">Laboratorul 1</a></li>
+        <li class="b2"><a href="lab2/">Laboratorul 2</a></li>
+        <li class="b3"><a href="lab3/">Laboratorul 3</a></li>
+        <li class="b4"><a href="lab4/">Laboratorul 4</a></li>
+    </ul>
+</body>
+</html>

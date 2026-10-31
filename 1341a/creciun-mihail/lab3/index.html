@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <title>Laboratorul 3 - Stiluri CSS</title>
+        <style>
+            .links {
+                list-style: none;
+                display: flex;
+                gap: 50px;
+            }
+
+            .links a {
+                display: inline-block;
+                padding: 10px 16px;
+                border-radius: 8px;
+                color: white;
+                text-decoration: none;
+            }
+
+            .links li:nth-child(1) a {
+                background-color: #009dff;
+            }
+
+            .links li:nth-child(2) a {
+                background-color: #008807;
+            }
+
+            .links li:nth-child(3) a {
+                background-color: #8e44ad;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Laboratorul 3 - stiluri CSS</h1>
+        <p><a href="FormtareText.html">Indicații</a></p>
+        <ul class="links">
+            <li><a href="FormtareText_inline.html">Stiluri inline</a></li>
+            <li><a href="FormtareText_internal.html">Stiluri interne</a></li>
+            <li><a href="FormtareText_external.html">Stiluri externe</a></li>
+        </ul>
+        <p><a href="../index.html">Laboratoarele mele</a></p>
+    </body>
+</html>

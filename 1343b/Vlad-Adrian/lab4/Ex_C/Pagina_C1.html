@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS_C1</title>
+  <style>
+    #hd {
+      font-variant: small-caps;
+      color: magenta;
+    }
+
+    h1 {
+      color: blue;
+      background-color: #cccc00;
+    }
+
+    caption {
+      color: white;
+      background-color: orange;
+      font-size: 1.4em;
+      font-weight: bold;
+      padding: 8px;
+    }
+
+    body {
+      background-color: #ffffcc;
+    }
+
+    .center,
+    p {
+      text-align: center;
+      color: red;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid green;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px 15px;
+    }
+
+    th {
+      background-color: magenta;
+    }
+
+    td {
+      background-color: orange;
+    }
+
+    .echipa {
+      background-color: magenta;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="hd">Tabel special</h1>
+  <p>Un tabel cu "celule lipite"
+  </p>
+  <table style="width:100%">
+    <caption>Echipe si hobby-uri</caption>
+    <tr>
+      <th>Echipa</th>
+      <th>Nume</th>
+      <th colspan="2">Pasiuni</th>
+    </tr>
+    <tr>
+      <td rowspan="3" class="echipa">Munte</td>
+      <td>Popescu</td>
+      <td>calatorii</td>
+      <td>filatelie</td>
+    </tr>
+    <tr>
+      <td>Ionescu</td>
+      <td>planorism</td>
+      <td>sah</td>
+    </tr>
+    <tr>
+      <td>Radulescu</td>
+      <td>drumetii</td>
+      <td>fotografie</td>
+    </tr>
+    <tr>
+      <td rowspan="4" class="echipa">Mare</td>
+      <td>Georgescu</td>
+      <td>plaja</td>
+      <td>dans</td>
+    </tr>
+    <tr>
+      <td>Gigescu</td>
+      <td>surf</td>
+      <td>samba</td>
+    </tr>
+    <tr>
+      <td>Mintescu</td>
+      <td>politica</td>
+      <td>delicateturi</td>
+    </tr>
+    <tr>
+      <td>Marinescu</td>
+      <td>inot</td>
+      <td>scufundari</td>
+    </tr>
+  </table>
+
+  <!--
+Exercițiul 4:
+Pentru a face tabelul lizibil, am adăugat chenare celulelor și tabelului (border: 1px solid black), contopirea acestora într-o linie unică (border-collapse: collapse) și spațiu interior între text și chenar (padding: 8px pe th și td).
+
+Exercițiul 5:
+Am adăugat câte un membru nou cu două pasiuni în fiecare echipă (Radulescu la Munte și Marinescu la Mare). Am mărit atributul rowspan la 3 pentru Munte și la 4 pentru Mare, astfel încât celulele echipelor să cuprindă toți membrii.
+
+Exercițiul 6:
+Am formatat tabelul conform cerințelor: titlul tabelului este alb, mare și pe fond portocaliu (caption), antetul are fond magenta (th), celulele de date au fond portocaliu (td), iar celulele echipelor au clasa echipa cu fond magenta, text aldin și centrat. Toate chenarele sunt verzi și contopite (border: 1px solid green, border-collapse: collapse), având spațiere generoasă în celule (padding: 10px 15px).
+-->
+</body>
+
+</html>

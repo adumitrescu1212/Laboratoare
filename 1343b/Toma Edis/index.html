@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="ro">
-    <head>
-        <meta charset = "UTF-8">
-        <title> Pagina principala </title>
-    </head>
-    <body>
-        <h1> Laboratoarele mele</h1>
-        <p> Programarea aplicatiilor web - Seria MIAI </p>
-        <a href = "Laborator1/"> Laboratorul 1 </a>
-        <a href = "Laborator2/"> Laboratorul 2 </a>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina Personala - Laboratoare</title>
+    <style>
+        .meniu-laboratoare {
+            list-style-type: none;
+            padding: 0;
+        }
+        .meniu-laboratoare li {
+            margin-bottom: 15px; /* Spațiu vertical între butoane */
+        }
+        .meniu-laboratoare a {
+            display: inline-block;
+            width: 300px; /* Toate de aceeași lățime */
+            text-align: center;
+            background-color: #2980b9;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease; /* Efect la hover */
+        }
+        .meniu-laboratoare a:hover {
+            background-color: #1a5276; /* Schimbă culoarea la hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Laboratoare Web</h1>
+    <ul class="meniu-laboratoare">
+        <li><a href="Laborator1/">Laboratorul 1</a></li>
+        <li><a href="Laborator2/">Laboratorul 2</a></li>
+        <li><a href="Laborator3/">Laboratorul 3</a></li>
+        <li><a href="Laborator4/">Laboratorul 4</a></li>
+    </ul>
+</body>
 </html>

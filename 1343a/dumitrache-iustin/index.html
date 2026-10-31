@@ -3,11 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <title>Pagina principala</title>
+        <style>
+        ul {
+        list-style-type: none;
+        gap: 10px;
+      }
+      li {
+        padding: 20px;
+        border-radius: 5px;
+        width:100px
+      }
+      li:hover{
+        background-color:red
+      }
+      a {
+        text-decoration: none;
+        color:black;
+        border-radius: 5px;
+      }
+      
+      .li2{background-color: yellow;}
+
+    </style>
     </head>
+    
     <body>
         <h1>Laboratoarele mele</h1>
         <p>Programarea aplicatiilor web - Seria MIAI</p>
-        <a href="L1/">Laboratorul 1</a>
-        <a href="L2/">Laboratorul 2</a>
+        <ul>
+        <li class="li2" ><a href="L1/">Laboratorul 1</a></li>
+        <li class="li2"><a href="L2/">Laboratorul 2</a></li>
+        <li class="li2"><a href="L3/">Laboratorul 3</a></li>
+        <li class="li2"><a href="L4/">Laboratorul 4</a></li>
+        </ul>
     </body>
 </html>
