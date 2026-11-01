@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="UTF-8">
+        <title>Laboratorul 3 - Stiluri CSS</title>
+        <style>
+            .luffy {list-style: none;
+                display: flex;
+                gap: 20px;
+            }
+            .luffy a {display:inline-block;
+                padding : 15px 20px;
+                color: white;
+                text-decoration: none;
+                border-radius: 12px;
+
+
+            }
+            .luffy li:nth-child(1) a {background-color: rgb(49, 18, 136);}
+             .luffy li:nth-child(2) a {background-color: rgb(255, 0, 0);}
+              .luffy li:nth-child(3) a {background-color: rgb(130, 180, 49);}
+            </style>
+    </head>
+    <body>
+        <h1>Laboratorul 3 - stiluri CSS</h1>
+        <p><a href="FormtareText.html">Indicații</a></p>
+        <ul class="luffy">
+        <li><a href="FormtareText_inline.html">Stiluri inline</a></li>
+        <li><a href="FormtareText_internal.html">Stiluri interne</a></li>
+        <li><a href="FormtareText_external.html">Stiluri externe</a></li>
+        <li><a href="../index.html">Laboratoarele mele</a></li>
+        </ul>
+    </body>
+</html>

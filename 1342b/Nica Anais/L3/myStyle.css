@@ -1,0 +1,11 @@
+.titlu1 { font-family: 'Courier New', Courier, monospace; font-size:14pt; color: blue; }
+.titlu2 { font-family: Arial, sans-serif; font-size:12pt; color:red; }
+.paragraf-verde { font-family: 'Times New Roman', serif; font-size:12pt; color:green; }
+
+.sec-galbena { background-color: yellow; font-family: Calibri, sans-serif; font-size:12pt; color:blue; }
+.sec-galbena p { font-style: italic; }
+
+.sec-albastra { background-color: blue; font-family: Arial, sans-serif; font-size: 10pt; color:white; }
+.sec-albastra p { font-variant: small-caps; }
+
+footer { color:white; background-color:black; }

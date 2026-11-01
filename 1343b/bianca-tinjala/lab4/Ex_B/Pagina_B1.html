@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_B1</title>
+<style>
+    body {
+    background-color: #ffffcc;
+    }
+.center {
+  text-align: center;
+  color: white;
+}
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.centre {
+border: 5px solid blue;
+ padding: 15px;
+}
+#s1 {
+background-color: #00cc66;
+}
+#s2 {
+background-color: yellow;
+}
+div {
+color:blue;
+}
+
+/* 1. Fundal albastru pentru primul tabel */
+#s1 table {
+    background-color: blue;
+}
+
+/* 2. Uniformizare celule tabel 2 (chenar si padding egal) */
+#s2 th, #s2 td {
+    border: 1px solid black;
+    padding: 8px;
+}
+</style>
+</head>
+<body>
+
+<h1 class="center">Tabele formatate</h1>
+<div id="s1">
+<table style="width:100%" class="center">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<br>
+</div> 
+<div id="s2" style="width:50%">
+<br>
+<table style="width:100%" class="centre">
+  <tr>
+    <th class="centre">Firstname</th>
+    <th class="centre">Lastname</th>
+    <th class="centre">Age</th>
+  </tr>
+  <tr>
+    <td class="centre">Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td class="centre">Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+</div> 
+
+<!--
+Explicatie Ex 3:
+1. De ce tabelele aveau fundaluri diferite initial:
+   - Fundalul nu se mosteneste si este transparent. Prin tabele se vedea fundalul div-urilor parinte (#s1 verde, #s2 galben).
+2. De ce celulele din tabelul 2 erau diferite intre ele:
+   - Doar unele celule aveau clasa '.centre' (chenar albastru gros si padding 15px). Restul aveau doar chenar negru subtire de 1px si fara padding.
+3. Modificari facute:
+   - Am pus fundal albastru pe primul tabel: '#s1 table { background-color: blue; }'.
+   - Am uniformizat celulele din tabelul 2 prin '#s2 th, #s2 td' cu chenar negru de 1px si padding de 8px (selectorul cu ID bate clasa .centre).
+-->
+</body>
+</html>

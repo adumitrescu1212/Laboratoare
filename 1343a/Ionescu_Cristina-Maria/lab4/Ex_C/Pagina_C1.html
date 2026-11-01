@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_C1</title>
+<style>
+    #hd {
+        font-variant: small-caps;
+        color: magenta;
+    }
+    h1 {
+        color: blue;
+        background-color: #cccc00;
+    }
+    body {
+        background-color: #ffffcc;
+    }
+    .center, p {
+        text-align: center;
+        color: red;
+    }
+
+    /* Stylizare conform Exercitiilor 4 si 6 */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 2px solid green;
+    }
+
+    caption {
+        background-color: orange;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    th, td {
+        border: 2px solid green;
+        padding: 12px;
+        text-align: left;
+    }
+
+    /* Antetul tabelului (magenta) */
+    th {
+        background-color: magenta;
+        color: black;
+    }
+
+    /* Celulele de date normale (portocalii) */
+    td {
+        background-color: orange;
+        color: black;
+    }
+
+    /* Celulele cu numele echipelor (magenta, ingrosate, centrate) */
+    td.echipa {
+        background-color: magenta;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+</head>
+<body>
+
+<h1 id="hd">Tabel special</h1>
+<p>Un tabel cu "celule lipite"</p> 
+
+<table>
+<caption>Echipe si hobby-uri</caption>
+  <tr>
+    <th>Echipa</th>
+    <th>Nume</th>
+    <th colspan="2">Pasiuni</th>
+  </tr>
+  
+  <!-- Echipa Munte (3 membri: 2 vechi + 1 nou) -> rowspan="3" -->
+  <tr>
+    <td rowspan="3" class="echipa">Munte</td>
+    <td>Popescu</td>
+    <td>calatorii</td>
+    <td>filatelie</td>
+  </tr>
+  <tr>
+    <td>Ionescu</td>
+    <td>planorism</td>
+    <td>sah</td>
+  </tr>
+  <tr>
+    <td>Vasilescu</td> <!-- Membru nou Echipa Munte -->
+    <td>fotografie</td>
+    <td>hiking</td>
+  </tr>
+
+  <!-- Echipa Mare (4 membri: 3 vechi + 1 nou) -> rowspan="4" -->
+  <tr>
+    <td rowspan="4" class="echipa">Mare</td>
+    <td>Georgescu</td>
+    <td>plaja</td>
+    <td>dans</td>
+  </tr>
+  <tr>
+    <td>Gigescu</td>
+    <td>surf</td>
+    <td>samba</td>
+  </tr>
+  <tr>
+    <td>Mintescu</td>
+    <td>politica</td>
+    <td>delicateturi</td>
+  </tr>
+  <tr>
+    <td>Marinescu</td> <!-- Membru nou Echipa Mare -->
+    <td>scuba</td>
+    <td>inot</td>
+  </tr>
+</table>
+
+</body>
+</html>

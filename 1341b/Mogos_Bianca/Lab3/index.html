@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - Meniu Exerciții</title>
+    <style>
+        /* Stiluri pentru lista neordonată */
+        .meniu-exercitii {
+            list-style-type: none; /* Elimină bulinele */
+            padding: 0;
+            margin: 0;
+            display: flex;         /* Așează elementele unul lângă altul */
+            gap: 15px;             /* Spațiu între butoane */
+        }
+
+        /* Stil general pentru link-urile din listă */
+        .meniu-exercitii li a {
+            display: inline-block;
+            text-decoration: none; /* Elimină sublinierea textului */
+            color: #ffffff;        /* Text alb */
+            padding: 12px 20px;    /* Spațiere interioară (padding) */
+            border-radius: 8px;    /* Colțuri rotunjite */
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            transition: opacity 0.2s ease;
+        }
+
+        /* Efect la trecerea cursorului peste buton */
+        .meniu-exercitii li a:hover {
+            opacity: 0.85;
+        }
+
+        /* Culori individuale diferite pentru fiecare buton */
+        .btn-ex1 {
+            background-color: #27ae60; /* Verde */
+        }
+
+        .btn-ex2 {
+            background-color: #2980b9; /* Albastru */
+        }
+
+        .btn-ex3 {
+            background-color: #8e44ad; /* Mov */
+        }
+        .btn-ex4 { background-color: #e67e22; } /* Portocaliu */
+    </style>
+</head>
+<body>
+
+    <h1>Exercitii Laborator 3</h1>
+
+    <!-- Lista neordonată cu cele trei link-uri -->
+    <ul class="meniu-exercitii">
+        <li><a href="FormtareText.html" class="btn-ex1">FormtareText</a></li>
+        <li><a href="FormtareText_external.html" class="btn-ex2">FormtareText_external</a></li>
+        <li><a href="FormtareText_internal.html" class="btn-ex3">FormtareText_internal</a></li>
+        <li><a href="FormtareText_inline.html" class="btn-ex4">FormtareText_inline</a></li>
+    </ul>
+
+</body>
+</html>

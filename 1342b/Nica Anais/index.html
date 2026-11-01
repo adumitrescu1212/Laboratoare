@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Pagina principală</title>
+<style>
+    /* Exercițiul 6: Stiluri pentru meniul principal (butoane uniforme) */
+    ul.meniu-principal {
+        list-style-type: none; /* elimină bulinele */
+        padding: 0;
+    }
+    ul.meniu-principal li {
+        margin-bottom: 12px; /* spațiu vertical între butoane */
+    }
+    ul.meniu-principal li a {
+        text-decoration: none;
+        color: white;
+        background-color: #2c3e50; /* Culoare uniformă (albastru închis) */
+        padding: 12px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        width: 280px; /* Lățime uniformă pentru toate butoanele */
+        text-align: center;
+        font-family: Arial, sans-serif;
+        transition: background-color 0.3s; /* tranziție lină pentru hover */
+    }
+    /* Efect de schimbare a culorii la trecerea cu mouse-ul */
+    ul.meniu-principal li a:hover {
+        background-color: #e67e22; /* portocaliu la hover */
+    }
+</style>
+</head>
+<body>
+
+<h1>Laboratoarele mele</h1>
+<p>Programarea aplicațiilor web - Seria MIAI</p>
+
+<!-- Lista cu laboratoarele -->
+<ul class="meniu-principal">
+    <li><a href="L1/pagina2.html">Laboratorul 1 - HTML</a></li>
+    <li><a href="L2/index.html">Laboratorul 2 - HTML și CSS</a></li>
+    <li><a href="L3/index.html">Laboratorul 3 - Publicare site și CSS</a></li>
+    <!-- Aici am adăugat linkul pentru noul laborator -->
+    <li><a href="L4/index.html">Laboratorul 4 - CSS</a></li>
+</ul>
+
+</body>
+</html>

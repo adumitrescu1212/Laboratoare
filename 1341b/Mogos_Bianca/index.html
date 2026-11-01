@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratoarele Mele</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        p.subtitle {
+            color: #7f8c8d;
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            color: #34495e;
+            margin: 20px 0 10px 0;
+            font-size: 1.2rem;
+            border-left: 4px solid #3498db;
+            padding-left: 10px;
+        }
+
+        ul.lab-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        ul.lab-list li {
+            margin-bottom: 10px;
+        }
+
+        ul.lab-list a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 18px;
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        ul.lab-list a:hover {
+            background-color: #e8f4fd;
+            border-color: #3498db;
+            color: #2980b9;
+            transform: translateX(5px);
+        }
+
+        .badge {
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background-color: #e0e0e0;
+            color: #555;
+        }
+
+        .badge.done {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #95a5a6;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Index Laboratoare</h1>
+        <p class="subtitle">Lista proiectelor și luczărilor de laborator</p>
+
+        <!-- CATEGORIA 1 -->
+        <h2 class="section-title">Semestrul 1</h2>
+        <ul class="lab-list">
+            <li>
+                <a href="Lab1/index.html">
+                    <span>Laboratorul 1 </span>
+                    <span class="badge done">Finalizat</span>
+                </a>
+            </li>
+            <li>
+                <a href="Lab2/index.html">
+                    <span>Laboratorul 2 </span>
+                    <span class="badge done">Finalizat</span>
+                </a>
+            </li>
+            <li>
+                <a href="Lab3/index.html">
+                    <span>Laboratorul 3 </span>
+                    <span class="badge done">Finalizat</span>
+                </a>
+            </li>
+            <li>
+                <a href="Lab4/index.html">
+                    <span>Laboratorul 4 </span>
+                    <span class="badge done">Finalizat</span>
+                </a>
+            </li>
+        </ul>
+
+
+        <footer>
+            <p>&copy; 2026 - Portofoliu Laboratoare</p>
+        </footer>
+    </div>
+
+</body>
+</html>
