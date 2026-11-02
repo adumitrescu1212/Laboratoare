@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Ex6 - bec cu contor</title>
+<script>
+var contor = 0;   // în afara funcției: își păstrează valoarea între clicuri
+
+function comuta() {
+    var bec = document.getElementById("bec");
+    console.log(bec.src);   // ex.: .../Bec%20stins.gif
+    if (bec.src.match("aprins")) {
+        bec.src = "Bec stins.gif";
+    } else {
+        bec.src = "Bec aprins.gif";
+        contor = contor + 1;
+        document.getElementById("mesaj").innerHTML =
+            "Becul a fost aprins de " + contor + " ori.";
+    }
+}
+</script>
+</head>
+<body>
+
+<h1>Bec cu contor</h1>
+
+<img id="bec" src="Bec stins.gif" width="100" height="180" alt="bec" onclick="comuta()">
+
+<p id="mesaj">Becul a fost aprins de 0 ori.</p>
+
+<p><a href="index.html">Înapoi</a></p>
+</body>
+</html>

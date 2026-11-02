@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Ex5 - alerte si fundalul paginii</title>
+</head>
+<body>
+
+<h1>Ordinea de încărcare a paginii</h1>
+
+<script>
+    window.alert("Titlul a fost afișat. Urmează primul paragraf.");
+    console.log("Alerta 1: după titlu");
+</script>
+
+<p onclick="document.body.style.backgroundColor = 'yellow'">
+   Primul paragraf: dați clic aici și fundalul paginii devine galben.</p>
+
+<script>
+    window.alert("Primul paragraf a fost afișat. Urmează al doilea.");
+    console.log("Alerta 2: între paragrafe");
+</script>
+
+<p onclick="document.body.style.backgroundColor = 'orange'">
+   Al doilea paragraf: dați clic aici și fundalul paginii devine portocaliu.</p>
+
+<p><a href="index.html">Înapoi</a></p>
+</body>
+</html>
