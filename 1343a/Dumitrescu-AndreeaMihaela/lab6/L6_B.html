@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>L6_B - schimbarea paragrafelor</title>
+<style>
+    #p1 { color: darkblue; background-color: lightyellow; font-size: 20px; padding: 8px; }
+    #p2 { color: white; background-color: darkgreen; font-style: italic; padding: 8px; }
+</style>
+</head>
+<body>
+
+<button type="button" id="buton">Schimbă paragrafele între ele</button>
+
+<p id="p1">Primul paragraf: dați clic pe mine pentru a-mi schimba textul.</p>
+<p id="p2">Al doilea paragraf, cu altă formatare.</p>
+
+<p><a href="index.html">Înapoi</a></p>
+
+<script>
+var p1 = document.getElementById("p1");
+var p2 = document.getElementById("p2");
+
+function schimbaText() {
+    var text = prompt("Introduceți noul text:", this.innerHTML);
+    if (text !== null && text !== "") {
+        this.innerHTML = text;
+    }
+}
+p1.onclick = schimbaText;
+p2.onclick = schimbaText;
+
+document.getElementById("buton").onclick = function () {
+    var aux = p1.innerHTML;
+    p1.innerHTML = p2.innerHTML;
+    p2.innerHTML = aux;
+};
+</script>
+</body>
+</html>

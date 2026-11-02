@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+Modificare folosind clase si evenimente
+</title>
+</head>
+<body>
+<h3> Utilizati Javascript si HTML DOM pentru a inlocui imaginile de mai jos asa cum este indicat in textele de deasupra lor</h3>
+La click vor aparea Pisici
+<hr />
+<img class="animal" src="Pesti.jpg" alt="Niste pesti" width="160" height="120">
+<br /> <br />
+La mouseover vor aparea Munti
+<hr />
+<img class="peisaj" src="desert.jpg" alt="O jungla" width="160" height="120">
+<br /> <br />
+La click vor aparea Caini
+<hr />
+<img class="animal" src="egrete.jpg" alt="Niste egrete" width="160" height="120">
+<br /> <br />
+la mouseout va aparea o Mare
+<hr />
+<img class="peisaj" src="jungla.jpg" alt="Un desert" width="160" height="120">
+
+<script>
+// Utilizati getElementsByClassName() pentru a modifica imaginile pentru a se potrivi cu textele de deasupra lor la aparitia evenimentelor indicate!
+var animale = document.getElementsByClassName("animal");
+var peisaje = document.getElementsByClassName("peisaj");
+animale[0].onclick = function () { this.src = "Img/pisici.jpg"; this.alt = "Pisici"; };
+peisaje[0].onmouseover = function () { this.src = "Img/munti.jpg"; this.alt = "Munti"; };
+animale[1].onclick = function () { this.src = "Img/caini.jpg"; this.alt = "Caini"; };
+peisaje[1].onmouseout = function () { this.src = "Img/mare.jpg"; this.alt = "Mare"; };
+</script>
+
+</body>
+</html>

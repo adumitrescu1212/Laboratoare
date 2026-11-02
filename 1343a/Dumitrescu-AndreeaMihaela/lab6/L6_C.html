@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>L6_C - culori cerute prin prompt</title>
+</head>
+<body>
+
+<h1 id="titlu">Clic pe titlu pentru culoare</h1>
+
+<p id="par">Prima linie a paragrafului.<br>
+A doua linie a paragrafului.<br>
+A treia linie: clic aici pentru culoarea de fundal.</p>
+
+<p><a href="index.html">Înapoi</a></p>
+
+<script>
+function cereCuloare() {
+    var c = prompt("Introduceți o culoare (ex.: red, #ff0000, rgb(255,0,0)):", "");
+    if (c === null || c === "") {
+        return null;
+    }
+    if (!CSS.supports("color", c)) {
+        alert("Culoarea „" + c + "” nu este corectă.");
+        return null;
+    }
+    return c;
+}
+
+document.getElementById("titlu").onclick = function () {
+    var c = cereCuloare();
+    if (c !== null) { this.style.color = c; }
+};
+
+document.getElementById("par").onclick = function () {
+    var c = cereCuloare();
+    if (c !== null) { this.style.backgroundColor = c; }
+};
+</script>
+</body>
+</html>
