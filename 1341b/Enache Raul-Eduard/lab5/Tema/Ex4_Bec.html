@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Bec </title>
+    <script>
+        function changeState(hoverState) {
+            var pic;
+            var image = document.getElementById("bec");
+            var text = document.getElementById("stateText");
+            if (hoverState == true) {
+                pic = "Bec aprins.gif";
+                text.innerHTML = "Bec aprins";
+            }
+            if (hoverState == false) {
+                pic = "Bec stins.gif";
+                text.innerHTML = "Bec stins";
+            }
+            document.getElementById("bec").src = pic;
+            image.src = pic;
+        }
+
+    </script>
+</head>
+<body>
+
+<h1 id="stateText" >Bec stins</h1>
+<p>
+<img  id="bec" src="Bec stins.gif" width="100" height="180" onmouseover="changeState(true)" onmouseout="changeState(false)">
+</p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Exercitiul 5
+    </title>
+    <script>
+        function changeState(paragraph) {
+            if (paragraph == "p1")
+                document.getElementById("corp").style.backgroundColor = "yellow";
+            if (paragraph == "p2")
+                document.getElementById("corp").style.backgroundColor = "orange";
+        }
+    </script>
+</head>
+<body id="corp">
+    <h1>
+        Header
+    </h1>
+    <script>window.alert("Prima alerta.");</script>
+    <p id="p1" onclick="changeState('p1')" >
+        Paragraf 1
+    </p>
+    <script>window.alert("A doua alerta.");</script>
+    <p id="p2" onclick="changeState('p2')">
+        Paragraf 2
+    </p>
+</body>
+</html>
