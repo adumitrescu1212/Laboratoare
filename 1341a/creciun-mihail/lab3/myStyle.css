@@ -1,0 +1,62 @@
+header {
+  background-color: GreenYellow;
+  text-align: right;
+  font-size: 14px;
+}
+
+#key {
+  color: blue;
+  background-color: yellow;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  font-size: 200%;
+}
+
+.centered {
+  text-align: center;
+}
+
+.courier-blue {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14pt;
+  color: blue;
+}
+
+.arial-red {
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+  color: red;
+}
+
+.times-green {
+  font-family: "Times New Roman", serif;
+  font-size: 12pt;
+  color: green;
+}
+
+.yellow-section {
+  background-color: yellow;
+  font-family: Calibri, sans-serif;
+  font-size: 12pt;
+  color: blue;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.blue-section {
+  background-color: blue;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  color: white;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+footer {
+  color: white;
+  background-color: black;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ex bonus</title>
+<script>
+var numarAprinderi = 0;
+
+function comutaBec() {
+    var bec = document.getElementById("becInteractiv");
+    var contorText = document.getElementById("afisajContor");
+
+    if (bec.src.includes("stins")) {
+        bec.src = "Bec aprins.gif";
+        numarAprinderi++;
+        contorText.innerHTML = "Becul a fost aprins de " + numarAprinderi + " ori.";
+    } else {
+        bec.src = "Bec stins.gif";
+    }
+}
+</script>
+</head>
+<body>
+<h1>Bec cu contor</h1>
+<img id="becInteractiv" src="Bec stins.gif" onclick="comutaBec()" style="cursor:pointer;" alt="Bec">
+<p id="afisajContor">Becul nu a fost aprins niciodata.</p>
+</body>
+</html>

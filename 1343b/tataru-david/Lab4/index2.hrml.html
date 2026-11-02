@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<title>Laborator 4 - Index 2</title>
+<style>
+    /* Blocul 3 (mutat primul) */
+    .center {
+        font-variant: small-caps;
+        color: blue;
+    }
+
+    /* Blocul 2 */
+    p, .center {
+        text-align: center;
+        color: red;
+    }
+
+    /* Blocul 1 (mutat ultimul) */
+    p {
+        text-align: right;
+    }
+</style>
+</head>
+<body>
+
+<h1 class="center">Exercitii separate in fiecare folder</h1>
+<p>
+    <a href="Ex_A/Pagina_A1.html">Ex_A</a> <br> 
+    <a href="Ex_B/Pagina_B1.html">Ex_B</a><br>
+    <a href="Ex_C/Pagina_C1.html">Ex_C</a>
+</p> 
+
+<!--
+EXPLICATIE EXERCITIUL 1:
+- In index.html: Regula '.center { color: blue; }' fiind scrisa ultima, castiga in fata regulii 'color: red' din blocul anterior pentru titlu. Paragrafele primesc 'text-align: center' si 'color: red'.
+- In index2.html: Dupa interschimbare, '.center, p { color: red; }' apare DUPA '.center { color: blue; }', facand titlul rosu. In plus, 'p { text-align: right; }' fiind ultimul bloc, alineaza paragrafele la dreapta.
+-->
+
+</body>
+</html>

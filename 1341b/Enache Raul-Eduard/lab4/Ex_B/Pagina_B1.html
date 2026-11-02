@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_B1</title>
+<style>
+    body {
+    background-color: #ffffcc;
+    }
+.center {
+  text-align: center;
+  color: white;
+}
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.centre {
+border: 5px solid blue;
+ padding: 15px;
+}
+    #s1 {
+        background-color: #001bcc;
+    }
+    #s2 {
+        background-color: yellow;
+    }
+div {
+    color:blue;
+    }
+</style>
+</head>
+<body>
+
+    <h1 class="center">Tabele formatate</h1>
+    <p>Tabele au culori diferite datorita existentei #sX, si a existentei id="sX"</p>
+    <div id="s1">
+
+        <table style="width:100%" class="center">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+        <br>
+    </div>
+    <p>Celulele tabelelor au dimensiuni diferite datorita existentei a doua reguli aplicate cu prioritate. Acele elemente a caror clasa este explicit centre obtin border 5 px cu color blue, padding 15. Cele care au strict tag-uri th,td raman cu border 1px black, border collapsed.</p>
+    <br>
+    <div id="s2" style="width:50%">
+        
+        <table style="width:100%">
+            <tr>
+                <th >Firstname</th>
+                <th >Lastname</th>
+                <th >Age</th>
+            </tr>
+            <tr>
+                <td >Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td >Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>

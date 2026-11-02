@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+ <meta charset="UTF-8">
+ <title>Exercitiul bonus 6</title>
+ <script>
+    var nrAprinderi = 0;
+
+    function actioneazaBec(){
+        var bec = document.getElementById("imagineBec");
+        var contor = document.getElementById("textContor");
+
+        if(bec.src.includes("stins")){
+            bec.src="Bec aprins.gif";
+            nrAprinderi++;
+            contor.innerHTML="Becul a fost aprins de " +nrAprinderi+" ori.";
+        }else{
+            bec.src="Bec stins.gif";
+        }
+    }
+ </script>
+</head>
+<body>
+    <h1>Ex Bonus</h1>
+    <img id="imagineBec" src="Bec stins.gif" onclick="actioneazaBec()" alt="Bec" style="cursor: pointer;">
+
+    <p id="textContor">Becu a fost aprins de 0 ori.</p>
+</body>
+</html>

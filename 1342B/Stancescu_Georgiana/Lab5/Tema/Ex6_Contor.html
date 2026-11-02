@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercițiul bonus – Contor aprinderi bec</title>
+    <script>
+        var contor = 0;
+
+        function comutaBec() {
+            var bec = document.getElementById("bec");
+            var paragraf = document.getElementById("contorParagraf");
+            
+            console.log("Valoare bec.src:", bec.src);
+
+            if (bec.src.indexOf("aprins") !== -1) {
+                bec.src = "Bec stins.gif";
+            } else {
+                bec.src = "Bec aprins.gif";
+                contor++;
+                paragraf.innerHTML = "Becul a fost aprins de " + contor + " ori.";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Exercițiul bonus – Contor aprinderi bec</h1>
+
+    <p>Faceți clic pe bec pentru a-l aprinde sau stinge:</p>
+
+    <p>
+        <img id="bec" src="Bec stins.gif" width="100" height="180" alt="Bec" onclick="comutaBec()" style="cursor: pointer;">
+    </p>
+
+    <p id="contorParagraf">Becul a fost aprins de 0 ori.</p>
+
+</body>
+</html>

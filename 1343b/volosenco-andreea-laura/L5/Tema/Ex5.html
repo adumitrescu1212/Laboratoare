@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Exercitiul 5 </title>
+
+</head>
+<body id="body">
+
+<h1>Data si ora</h1>
+<script>window.alert("Incarcare primul paragraf");</script>
+<p id="p1" onclick="changeColorYellow()">Data: 26.10.2026</p>
+<script>window.alert("Incarcare al doilea paragraf");</script>
+<p id="p2" onclick="changeColorOrange()">Ora: 10:08</p>
+
+<script>
+    b = document.getElementById("body");
+    function changeColorYellow() {
+        b.style.backgroundColor = "yellow";
+    }
+
+    function changeColorOrange() {
+        b.style.backgroundColor = "orange";
+    }
+</script>
+
+</body>
+</html>

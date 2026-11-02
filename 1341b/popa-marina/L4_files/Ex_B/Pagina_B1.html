@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_B1</title>
+<style>
+    body {
+        background-color: #ffffcc;
+    }
+    .center {
+        text-align: center;
+        color: white;
+    }
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    .centre {
+        border: 5px solid blue;
+        padding: 15px;
+    }
+    #s1 {
+        background-color: #00cc66;
+    }
+    #s2 {
+        background-color: yellow;
+    }
+    div {
+        color: blue;
+    }
+
+    #s1 table {
+        background-color: lightblue;
+        color: black; 
+    }
+</style>
+</head>
+<body>
+
+<h1 class="center">Tabele formatate</h1>
+
+<div id="s1">
+    <table style="width:100%" class="center">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+    <br>
+</div> 
+
+<div id="s2" style="width:50%">
+    <br>
+    <table style="width:100%" class="centre">
+      <tr>
+        <th class="centre">Firstname</th>
+        <th class="centre">Lastname</th>
+        <th class="centre">Age</th>
+      </tr>
+      <tr>
+        <td class="centre">Jill</td>
+        <td class="centre">Smith</td>
+        <td class="centre">50</td>
+      </tr>
+      <tr>
+        <td class="centre">Eve</td>
+        <td class="centre">Jackson</td>
+        <td class="centre">94</td>
+      </tr>
+    </table>
+</div> 
+
+<!-- 
+Explicații Exercițiul 3:
+1. De ce cele două tabele aveau fundaluri diferite:
+   Niciun tabel nu avea definită proprietatea 'background-color'. Această proprietate nu se moștenește de la părinte, însă elementele au în mod implicit fundal transparent. Din acest motiv, prin tabele se vedea fundalul containerelor părinte: div-ul #s1 avea fundal verde (#00cc66), iar div-ul #s2 avea fundal galben (yellow).
+2. De ce celulele din al doilea tabel arătau diferit între ele:
+   Doar antetul (th) și prima coloană aveau atribuită clasa 'class="centre"', primind o bordură groasă de 5px și padding de 15px. Celelalte celule (td) nu aveau această clasă și foloseau regula generală (border: 1px solid black fără padding explicit). Uniformizarea s-a realizat prin aplicarea clasei 'centre' tuturor celulelor din tabel.
+-->
+
+</body>
+</html>

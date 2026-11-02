@@ -1,0 +1,86 @@
+
+/* meniu */
+
+/* culori pt background */
+.pagina-acasa .meniu {
+    background-color: brown;
+}
+
+.pagina-filme .meniu {
+    background-color: gold;
+}
+
+.pagina-muzici .meniu {
+    background-color: blueviolet;
+}
+
+/* color change on hover */
+.pagina-acasa .meniu a:hover {
+    color: yellow;
+}
+
+/* Films page */
+.pagina-filme .meniu a:hover {
+    color: blue;
+}
+
+/* Music page */
+.pagina-muzici .meniu a:hover {
+    color: lime;
+}
+
+/* overlay highlight */
+.meniu a.activ {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* homepage */
+
+.descriere {
+    background-color: yellow;
+    color: blue;
+    padding: 10px;
+}
+
+/* imagini */
+.imagine-link {
+    width: 120px;
+}
+
+
+/* stil comun pt tabele */
+
+.descriereTabel {
+    width: 500px;
+    max-width: 100%;
+    border: 2px solid magenta;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: auto;
+}
+
+    /* toate celulele */
+    .descriereTabel th,
+    .descriereTabel td {
+        border: 2px solid magenta;
+        padding: 6px;
+    }
+
+    /* celule header */
+    .descriereTabel th {
+        background-color: aqua;
+    }
+
+    /* celule date */
+    .descriereTabel td {
+        background-color: aquamarine;
+    }
+
+
+
+/* layout fix pt pagina de filme */
+.pagina-filme .descriereTabel {
+    table-layout: fixed;
+}

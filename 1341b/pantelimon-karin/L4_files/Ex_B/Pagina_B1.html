@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_B1</title>
+<style>
+    body {
+    background-color: #ffffcc;
+    }
+.center {
+  text-align: center;
+  color: white;
+}
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.centre {
+border: 5px solid blue;
+ padding: 15px;
+}
+#s1 {
+background-color: blue;
+}
+#s2 {
+background-color: yellow;
+}
+div {
+color:blue;
+}
+</style>
+</head>
+<body>
+
+<h1 class="center">Tabele formatate</h1>
+<div id="s1">
+<table style="width:100%" class="center">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<br>
+</div> 
+<div id="s2" style="width:50%">
+<br>
+<table style="width:100%" class="centre">
+  <tr>
+    <th class="centre">Firstname</th>
+    <th class="centre">Lastname</th>
+    <th class="centre">Age</th>
+  </tr>
+  <tr>
+    <td class="centre">Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td class="centre">Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+</div> 
+<!--
+  Tabelele nu au un fundal propriu setat (ele sunt transparente by default). Prin urmare, se vede fundalul elementului părinte (div-ul în care se află fiecare tabel):
+- Primul tabel este pus într-un div cu id="s1", care are fundalul verde (#00cc66).
+- Al doilea tabel este pus într-un div cu id="s2", care are fundalul galben (yellow).
+-->
+
+<!--
+În al doilea tabel, clasa .centre conține un chenar gros de 5px solid blue și padding: 15px. 
+Această clasă nu este pusă pe toate celulele, ci doar pe unele. 
+Astfel, doar celulele cu clasa .centre au chenar gros și spațiere mare, celelalte rămânând subțiri (1px).
+-->
+</body>
+</html>

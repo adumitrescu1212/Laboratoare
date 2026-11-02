@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Bec </title>
+<script>
+    function changeImage1() {
+        var image = document.getElementById("bec");
+        image.src = "Bec aprins.gif";
+    }
+
+    function changeImage2() {
+        var image = document.getElementById("bec");
+        image.src = "Bec stins.gif";
+    }
+</script>
+</head>
+<body>
+
+<h1>Bec stins/aprins</h1>
+
+<p>
+    <img
+        id="bec"
+        onmouseover="changeImage1()"
+        onmouseout="changeImage2()"
+        src="Bec stins.gif"
+        width="100"
+        height="180"
+    >
+</p>
+
+
+
+
+</body>
+</html>

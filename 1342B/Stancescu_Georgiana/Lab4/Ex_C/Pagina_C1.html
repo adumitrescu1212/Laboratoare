@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_C1 - Exercițiul 6</title>
+<style>
+    body {
+        background-color: #ffffcc;
+    }
+    h1, p {
+        text-align: center;
+        color: red;
+    }
+    #hd {
+        font-variant: small-caps;
+        color: magenta;
+        background-color: aqua;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 2px solid green;
+    }
+    caption {
+        font-size: 1.5em;
+        color: white;
+        background-color: orange;
+        padding: 10px;
+    }
+    th {
+        background-color: magenta;
+        color: white;
+        border: 1px solid green;
+        padding: 12px;
+    }
+    td {
+        background-color: orange;
+        border: 1px solid green;
+        padding: 12px;
+    }
+    .echipa {
+        background-color: magenta;
+        font-weight: bold;
+        text-align: center;
+        color: white;
+    }
+</style>
+</head>
+<body>
+
+<h1 id="hd" >Tabel special</h1>
+<p>Un tabel cu "celule lipite"</p> 
+
+<table>
+<caption>Echipe si hobby-uri</caption>
+  <tr>
+    <th>Echipa</th>
+    <th>Nume</th>
+    <th colspan="2">Pasiuni</th>
+  </tr>
+  <tr>
+    <td rowspan="3" class="echipa">Munte</td>
+    <td>Popescu</td>
+    <td>calatorii</td>
+    <td>filatelie</td>
+  </tr>
+  <tr>
+    <td>Ionescu</td>
+    <td>planorism</td>
+    <td>sah</td>
+  </tr>
+  <tr>
+    <td>Dumitrescu</td> <!-- Membru nou echipa Munte -->
+    <td>alpinism</td>
+    <td>fotografie</td>
+  </tr>
+  <tr>
+    <td rowspan="4" class="echipa">Mare</td>
+    <td>Georgescu</td>
+    <td>plaja</td>
+    <td>dans</td>
+  </tr>
+  <tr>
+    <td>Gigescu</td>
+    <td>surf</td>
+    <td>samba</td>
+  </tr>
+  <tr>
+    <td>Mintescu</td>
+    <td>politica</td>
+    <td>delicateturi</td>
+  </tr>
+  <tr>
+    <td>Constantinescu</td> <!-- Membru nou echipa Mare -->
+    <td>inot</td>
+    <td>scuba diving</td>
+  </tr>
+</table>
+
+</body>
+</html>

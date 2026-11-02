@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercițiul 4</title>
+    <script>
+        function modificaParagrafe() {
+            var p1 = document.getElementById("p1");
+            p1.innerHTML = "Acesta este paragraful 1";
+            p1.style.backgroundColor = "lightblue";
+            p1.style.color = "darkblue";
+
+            var p2 = document.getElementById("p2");
+            p2.innerHTML = "Acesta este paragraful 2";
+            p2.style.backgroundColor = "lightgreen";
+            p2.style.color = "darkgreen";
+
+            var p3 = document.getElementById("p3");
+            p3.innerHTML = "Acesta este paragraful 3";
+            p3.style.backgroundColor = "lightyellow";
+            p3.style.color = "darkorange";
+        }
+    </script>
+</head>
+<body>
+
+    <p id="p1">Acesta este paragraful 1</p>
+    <p id="p2">Acesta este paragraful 2</p>
+    <p id="p3">Acesta este  paragraful 3</p>
+
+    <button onclick="modificaParagrafe()">Schimbă textele și culorile</button>
+
+</body>
+</html>

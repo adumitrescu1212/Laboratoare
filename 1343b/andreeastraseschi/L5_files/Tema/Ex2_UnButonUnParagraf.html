@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modificari cu JavaScript in tag</title>
+
+</head>
+<body>
+
+<h1>Modificari paragraf la click pe buton</h1>
+
+<p id="p1"> Paragraf de modificat</p> 
+
+<script> 
+function schimba() { 
+    var x = document.getElementById("p1");  
+  x.style.color = "red"; 
+  x.style.backgroundColor = "pink"; 
+}
+</script>
+
+<button id="p1" type="button" onclick="schimba()">Click!</button>
+
+
+
+</body>
+</html> 

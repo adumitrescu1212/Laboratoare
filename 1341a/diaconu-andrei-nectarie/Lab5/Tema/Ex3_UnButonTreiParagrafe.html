@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercitiul 4</title>
+    <script>
+        function schimbaTexte() {
+            var p1 = document.getElementById("p1");
+            var p2 = document.getElementById("p2");
+            var p3 = document.getElementById("p3");
+
+            p1.innerHTML = "Acesta este paragraful 1";
+            p1.style.color = "blue";
+
+            p2.innerHTML = "Acesta este paragraful 2";
+            p2.style.backgroundColor = "lightgray";
+
+            p3.innerHTML = "Acesta este paragraful 3";
+            p3.style.color = "red";
+            p3.style.backgroundColor = "yellow";
+        }
+    </script>
+</head>
+<body>
+    <p id="p1">Text vechi 1</p>
+    <p id="p2">Text vechi 2</p>
+    <p id="p3">Text vechi 3</p>
+    <button type="button" onclick="schimbaTexte()">Modifica paragrafele</button>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mesaj in “alerta” – pop-up</title>
+<script>
+window.alert("Apasarea butonului va produce schimbari");
+</script>
+<style>
+body {
+	background-color:yellow 
+}
+</style>
+</head>
+<body>
+
+<h1>Un alt exemplu JavaScript</h1>
+
+<p id="demo">JavaScript poate schimba stilul unui element html.</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("demo");
+    x.style.fontSize = "25px";           
+    x.style.color = "red"; 
+ var y = document.getElementById("butt");
+  var z = y.innerHTML;
+   if (z == "Click Me!"){
+     y.innerHTML="Wow!";
+    y.style.fontSize = "25px";           
+    y.style.color = "blue";}
+   else 
+    { y.innerHTML="Click Me!";
+    y.style.fontSize = "12px";           
+    y.style.color = "black";}
+
+}
+</script>
+
+<button id="butt" type="button" onclick="myFunction()">Click Me!</button>
+
+</body>
+</html> 

@@ -1,0 +1,16 @@
+/* Reguli CSS comune celor trei pagini din lab2 */
+
+.meniu {
+  padding: 8px;
+}
+
+/* (a) Regula care schimbă culoarea linkurilor din meniu la hover */
+.meniu a:hover {
+  color: red;
+}
+
+/* (b) Clasa activ pentru linkul paginii curente: îngroșat și fără subliniere */
+.activ {
+  font-weight: bold;
+  text-decoration: none;
+}
