@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modificari paragrafe</title>
+<script>
+    function threeP() {
+        var x1 = document.getElementById("p1");
+        var x2 = document.getElementById("p2");
+        var x3 = document.getElementById("p3");
+
+        x1.innerHTML = "Acesta este paragraful 1.";
+        x2.innerHTML = "Acesta este paragraful 2.";
+        x3.innerHTML = "Acesta este paragraful 3.";
+
+        x1.style.backgroundColor = "blue";
+        x2.style.backgroundColor = "yellow";
+        x3.style.backgroundColor = "red";
+
+        x1.style.color = "yellow";
+        x2.style.color = "magenta";
+        x3.style.color = "cyan";
+    }
+</script>
+</head>
+<body>
+
+<h1>Modificari paragrafe la click pe buton</h1>
+
+<p id="p1">Acesta este un paragraf</p>
+
+<p id="p2">Si acesta este un paragraf</p>
+
+<p id="p3">Acesta este inca un paragraf</p>
+
+<button type="button" onclick="threeP()">Apasa-ma!</button>
+
+</body>
+</html> 

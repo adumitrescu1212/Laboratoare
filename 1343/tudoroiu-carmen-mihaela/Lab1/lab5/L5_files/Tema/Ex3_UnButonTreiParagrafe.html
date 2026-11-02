@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Modificari paragrafe</title>
+    <script>
+        function modificaParagrafe() {
+            const paragrafe = document.querySelectorAll('p');
+
+            paragrafe[0].textContent = "Acesta este paragraful 1";
+            paragrafe[1].textContent = "Acesta este paragraful 2";
+            paragrafe[2].textContent = "Acesta este paragraful 3";
+
+            paragrafe.forEach((p, index) => {
+                p.style.padding = "10px";
+                p.style.borderRadius = "5px";
+                p.style.fontWeight = "bold";
+                
+                if (index === 0) {
+                    p.style.color = "#1b4332";
+                    p.style.backgroundColor = "#d8f3dc";
+                } else if (index === 1) {
+                    p.style.color = "#1d3557";
+                    p.style.backgroundColor = "#a8dadc";
+                } else if (index === 2) {
+                    p.style.color = "#6a040f";
+                    p.style.backgroundColor = "#ffb703";
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Modificări paragrafe la click pe buton</h1>
+
+    <p>Acesta este un paragraf</p>
+
+    <p>Și acesta este un paragraf</p>
+
+    <p>Acesta este încă un paragraf</p>
+
+    <button type="button" onclick="modificaParagrafe()">Apasă-mă!</button>
+
+</body>
+</html>
