@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <title>Ex6 - bec cu contor</title>
 <script>
-var contor = 0;   // în afara funcției: își păstrează valoarea între clicuri
+var contor = 0; 
 
 function comuta() {
     var bec = document.getElementById("bec");
-    console.log(bec.src);   // ex.: .../Bec%20stins.gif
+    console.log(bec.src);
     if (bec.src.match("aprins")) {
         bec.src = "Bec stins.gif";
     } else {
