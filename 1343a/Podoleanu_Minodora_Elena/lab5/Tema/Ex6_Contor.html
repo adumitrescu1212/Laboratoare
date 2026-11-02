@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bec cu Contor</title>
+<script>
+// Variabila contor declarată în afara funcției pentru a-și păstra valoarea între clicuri
+var contor = 0;
+
+function comutaBec() {
+    var bec = document.getElementById('bec');
+    var textContor = document.getElementById('textContor');
+
+    // Afișăm în consolă adresa completă din src pentru a vedea cum apare spațiul (ex: %20)
+    console.log(bec.src);
+
+    // Verificăm dacă imaginea curentă conține cuvântul "stins" în adresă
+    if (bec.src.includes("stins")) {
+        bec.src = "Bec aprins.gif";
+        contor++; // Creștem contorul doar când becul se aprinde
+        textContor.innerHTML = "Becul a fost aprins de " + contor + " ori.";
+    } else {
+        bec.src = "Bec stins.gif";
+    }
+}
+</script>
+</head>
+<body>
+
+<h1>Bec interactiv cu contor</h1>
+
+<p>
+<img id="bec" onclick="comutaBec()" src="Bec stins.gif" width="100" height="180" style="cursor: pointer;">
+</p>
+
+<p id="textContor">Becul a fost aprind de 0 ori.</p>
+
+</body>
+</html>
