@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bec cu contor</title>
+
+    <script>
+        var contor = 0;
+        var aprins = false;
+
+        function schimbaBec() {
+
+            var bec = document.getElementById("bec");
+            var text = document.getElementById("contor");
+
+            if (aprins == false) {
+                bec.src = "Bec aprins.gif";
+                aprins = true;
+                contor++;
+            }
+            else {
+                bec.src = "Bec stins.gif";
+                aprins = false;
+            }
+
+            text.innerHTML =
+                "Becul a fost aprins de " + contor + " ori.";
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1>Bec cu contor</h1>
+
+    <img id="bec"
+         src="Bec stins.gif"
+         onclick="schimbaBec()"
+         alt="Bec">
+
+    <p id="contor">
+        Becul a fost aprins de 0 ori.
+    </p>
+
+</body>
+</html>

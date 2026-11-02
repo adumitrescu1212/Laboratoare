@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_B1</title>
+<style>
+    body {
+    background-color: #ffffcc;
+    }
+.center {
+  text-align: center;
+  color: white;
+}
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.centre {
+border: 5px solid blue;
+ padding: 15px;
+}
+#s1 {
+background-color: #00cc66;
+}
+#s2 {
+background-color: yellow;
+}
+div {
+color:blue;
+}
+#s1 table {
+background-color: blue;
+}
+.centre th, .centre td {
+border: 5px solid blue;
+padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1 class="center">Tabele formatate</h1>
+<div id="s1">
+<table style="width:100%" class="center">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<br>
+</div> 
+<div id="s2" style="width:50%">
+<br>
+<table style="width:100%" class="centre">
+  <tr>
+    <th class="centre">Firstname</th>
+    <th class="centre">Lastname</th>
+    <th class="centre">Age</th>
+  </tr>
+  <tr>
+    <td class="centre">Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td class="centre">Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+</div> 
+
+
+</body>
+</html>
+<!--
+Ex. 3:
+- Tabelele nu au background-color, deci sunt transparente si prin ele se vede fundalul
+  div-ului parinte: primul tabel e in div#s1 (verde #00cc66), al doilea in div#s2 (galben).
+  Fundalul nu se mosteneste, dar un element fara fundal propriu lasa sa se vada fundalul parintelui.
+- Fundalul primului tabel l-am facut albastru cu regula #s1 table { background-color: blue; }.
+- In al doilea tabel doar unele celule au clasa centre (chenar albastru de 5px si padding 15px);
+  celelalte au doar regula table, th, td (chenar negru de 1px, fara padding). Cu border-collapse,
+  intre celule vecine se afiseaza chenarul cel mai gros, de aceea liniile arata amestecat.
+- Uniformizare: regula .centre th, .centre td (clasa + tag) se aplica tuturor celulelor din tabelul
+  cu clasa centre si bate regula table, th, td (doar tag), deci toate celulele au acelasi chenar si padding.
+-->

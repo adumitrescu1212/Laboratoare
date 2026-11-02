@@ -1,50 +1,87 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
-  <title>Stroescu Adrian – laboratoare</title>
-  <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 40px;
-    }
+    <meta charset="UTF-8">
+    <title>Stroescu Adrian – laboratoare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #f4f6f8;
+            color: #333;
+        }
 
-    ul.meniu-laboratoare {
-        list-style-type: none;
-        padding: 0;
-        margin: 20px 0;
-        display: flex;
-        gap: 15px;
-    }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
 
-    ul.meniu-laboratoare a {
-        display: block;
-        width: 170px;
-        text-align: center;
-        padding: 12px 0;
-        background-color: #2b7a78;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        font-weight: bold;
-        transition: background-color 0.3s;
-    }
+        h1 {
+            color: #2b7a78;
+            margin-bottom: 5px;
+        }
 
-    ul.meniu-laboratoare a:hover {
-        background-color: #e36414;
-    }
-  </style>
+        p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 8px;
+            color: #3aafa9;
+        }
+
+        ul.meniu-laboratoare {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        ul.meniu-laboratoare a {
+            display: block;
+            width: 170px;
+            text-align: center;
+            padding: 14px 0;
+            background-color: #2b7a78;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        ul.meniu-laboratoare a:hover {
+            background-color: #e36414;
+            transform: translateY(-2px); 
+        }
+    </style>
 </head>
 <body>
-  <h1>Stroescu Adrian</h1>
-  <p>Programarea aplicațiilor web – subgrupa 1343B</p>
 
-  <h2>Laboratoare</h2>
-  <ul class="meniu-laboratoare">
-    <li><a href="lab1/index.html">Laboratorul 1</a></li>
-    <li><a href="l2/index.html">Laboratorul 2</a></li>
-    <li><a href="lab3/index.html">Laboratorul 3</a></li>
-    <li><a href="lab4/index.html">Laboratorul 4</a></li>
-  </ul>
+    <div class="container">
+        <h1>Stroescu Adrian</h1>
+        <p>Programarea aplicațiilor web – subgrupa 1343B</p>
+
+        <h2>Laboratoare</h2>
+        <ul class="meniu-laboratoare">
+            <li><a href="lab1/index.html">Laboratorul 1</a></li>
+            <li><a href="l2/index.html">Laboratorul 2</a></li>
+            <li><a href="lab3/index.html">Laboratorul 3</a></li>
+            <li><a href="lab4/index.html">Laboratorul 4</a></li>
+            <li><a href="lab5/index.html">Laboratorul 5</a></li>
+        </ul>
+    </div>
+
 </body>
 </html>

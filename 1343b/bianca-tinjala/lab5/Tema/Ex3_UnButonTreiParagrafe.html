@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trei paragrafe</title>
+
+    <script>
+        function modifica() {
+
+            var p1 = document.getElementById("p1");
+            var p2 = document.getElementById("p2");
+            var p3 = document.getElementById("p3");
+
+            p1.innerHTML = "Acesta este paragraful 1";
+            p2.innerHTML = "Acesta este paragraful 2";
+            p3.innerHTML = "Acesta este paragraful 3";
+
+            p1.style.backgroundColor = "yellow";
+            p1.style.color = "red";
+
+            p2.style.backgroundColor = "pink";
+            p2.style.color = "blue";
+
+            p3.style.backgroundColor = "lightgreen";
+            p3.style.color = "purple";
+        }
+    </script>
+
+</head>
+<body>
+
+    <p id="p1">Primul paragraf</p>
+    <p id="p2">Al doilea paragraf</p>
+    <p id="p3">Al treilea paragraf</p>
+
+    <button onclick="modifica()">
+        Modifica paragrafele
+    </button>
+
+</body>
+</html>
