@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina B1 - Tabele</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        table {
+            margin: 20px 0;
+        }
+
+        .primul {
+            background-color: blue;
+            color: white;
+        }
+
+        .al-doilea {
+            border-collapse: collapse;
+        }
+
+        .al-doilea th,
+        .al-doilea td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tabele CSS</h1>
+
+    <table class="primul" border="1">
+        <caption>Primul tabel</caption>
+        <tr>
+            <th>Element</th>
+            <th>Descriere</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Structura paginii</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Aspectul paginii</td>
+        </tr>
+    </table>
+
+    <table class="al-doilea">
+        <caption>Al doilea tabel</caption>
+        <tr>
+            <th>Nume</th>
+            <th>Pasiune</th>
+        </tr>
+        <tr>
+            <td>Popescu</td>
+            <td>Călătorii</td>
+        </tr>
+        <tr>
+            <td>Ionescu</td>
+            <td>Șah</td>
+        </tr>
+    </table>
+
+    <!--
+    Fundalul poate fi vizibil printr-un element transparent,
+    chiar dacă acel element nu are background-color propriu.
+    Primul tabel are acum fundal albastru prin clasa .primul.
+    Chenarele și spațiile celulelor celui de-al doilea tabel
+    sunt uniformizate prin border și padding.
+    border-collapse: collapse unește chenarele vecine.
+    -->
+    
+    <a href="../../index.html">Inapoi la laborator</a>
+    
+</body>
+</html>

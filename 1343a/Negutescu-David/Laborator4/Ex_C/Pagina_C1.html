@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_C1</title>
+<style>
+
+        #hd {
+         
+        font-variant: small-caps;
+        color:magenta;
+    }
+     h1, caption {
+        color: white;
+    background-color: #cccc00;
+    }
+      body {
+    background-color: #ffffcc;
+    }
+.center, p {
+  text-align: center;
+  color: red;
+}
+.pink{
+  background-color: magenta;
+}
+.orange{
+  background-color: orange;
+}
+table{
+   border-collapse: collapse;
+}
+td,th{
+  border: 3px solid green;
+ padding: 10px;
+}
+caption{
+  font-size: 24px;
+}
+</style>
+</head>
+<body>
+
+<h1 id="hd">Tabel special</h1>
+<p>Un tabel cu "celule lipite"
+</p> 
+<table style="width:100%">
+<caption class="orange">Echipe si hobby-uri</caption>
+  <tr>
+    <th class="pink">Echipa</th>
+	<th class="pink">Nume</th>
+    <th colspan="2" class="pink">Pasiuni</th>
+  </tr>
+  <tr>
+	<td rowspan="3" class="pink">Munte</td>
+    <td class="orange">Popescu</td>
+    <td class="orange">calatorii</td>
+    <td class="orange">filatelie</td>
+
+  </tr>
+  <tr>
+	
+    <td class="orange">John</td>
+    <td class="orange">citit </td>
+    <td class="orange">pictat</td>
+  </tr>
+  <tr>
+	
+    <td class="orange">Ionescu</td>
+    <td class="orange">planorism</td>
+    <td class="orange">sah</td>
+  </tr>
+  <tr>
+	<td rowspan="4" class="pink">Mare</td>
+    <td class="orange">Georgescu</td>
+    <td class="orange">plaja</td>
+    <td class="orange">dans</td>
+  </tr>
+  <tr>
+	
+    <td class="orange">Gigescu</td>
+    <td class="orange">surf</td>
+    <td class="orange">samba</td>
+  </tr>
+  <tr>
+	
+    <td class="orange">Rushford</td>
+    <td class="orange">escaladat</td>
+    <td class="orange">dans</td>
+  </tr>
+  <tr>
+	
+    <td class="orange">Mintescu</td>
+    <td class="orange">politica</td>
+    <td class="orange">delicateturi</td>
+  </tr>
+</table>
+</body>
+</html>

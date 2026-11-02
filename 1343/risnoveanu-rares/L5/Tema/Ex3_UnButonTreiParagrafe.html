@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Ex3</title>
+<script>
+function schimba() {
+    var p1 = document.getElementById("p1");
+    var p2 = document.getElementById("p2");
+    var p3 = document.getElementById("p3");
+
+    p1.innerHTML = "Acesta este paragraful 1";
+    p2.innerHTML = "Acesta este paragraful 2";
+    p3.innerHTML = "Acesta este paragraful 3";
+
+    p1.style.color = "white";
+    p1.style.backgroundColor = "green";
+    p2.style.color = "red";
+    p2.style.backgroundColor = "yellow";
+    p3.style.color = "yellow";
+    p3.style.backgroundColor = "blue";
+}
+</script>
+</head>
+<body>
+<p id="p1">Primul paragraf</p>
+<p id="p2">Al doilea paragraf</p>
+<p id="p3">Al treilea paragraf</p>
+<button type="button" onclick="schimba()">Click</button>
+<p><a href="../index.html">Inapoi</a></p>
+</body>
+</html>

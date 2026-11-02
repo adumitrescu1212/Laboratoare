@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_B1</title>
+<style>
+    body {
+    background-color: #ffffcc;
+    }
+.center {
+  text-align: center;
+  color: white;
+}
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#s1 {
+background-color: blue;
+}
+#s2 {
+background-color: yellow;
+}
+
+</style>
+</head>
+<body>
+
+<h1 class="center">Tabele formatate</h1>
+<div id="s1">
+<table style="width:100%" class="center">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<br>
+</div> 
+<div id="s2">
+<br>
+<table style="width:100%" class="centre">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+</div> 
+<!--
+ex3: tabelele nu au background-color, deci sunt transparente si se vede fundalul div-ului in care se afla (#s1 verde, #s2 galben). Primul tabel e albastru prin regula #t1.
+Celule diferite: doar unele celule aveau clasa centre (chenar 5px si padding 15px), restul primeau doar chenarul de 1px de la table, th, td. Am pus class="centre" pe toate celulele.
+-->
+
+</body>
+</html>

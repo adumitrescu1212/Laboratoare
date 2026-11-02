@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<title>CSS_C1</title>
+<style>
+    /* Stilurile initiale pentru titlu si paragraf - neschimbate conform Exercitiului 6 */
+    #hd {
+        font-variant: small-caps;
+        color: magenta;
+    }
+    h1, caption {
+        color: blue;
+        background-color: #cccc00;
+    }
+    body {
+        background-color: #ffffcc;
+    }
+    .center, p {
+        text-align: center;
+        color: red;
+    }
+
+    /* Exercitiul 4 & 6: Stilizare tabel conform machetei grafice */
+    table.tabel-special {
+        width: 100%;
+        border-collapse: collapse; /* Chenare contopite intr-o singura linie */
+        border: 2px solid green;   /* Chenar exterior verde */
+        margin-top: 15px;
+    }
+
+    /* Titlul tabelului (caption) - alb, mare, pe fond portocaliu */
+    table.tabel-special caption {
+        background-color: #ffaa00;
+        color: white;
+        font-size: 1.4em;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    /* Antetul tabelului - fond magenta, chenar verde */
+    table.tabel-special th {
+        background-color: magenta;
+        color: black;
+        border: 1px solid green;
+        padding: 12px;
+        font-size: 1.1em;
+    }
+
+    /* Celulele de date standard - fond portocaliu, chenar verde, spatiu generos */
+    table.tabel-special td {
+        background-color: #ffaa00;
+        color: black;
+        border: 1px solid green;
+        padding: 10px 15px;
+    }
+
+    /* Celulele cu numele echipelor - fond magenta, text ingrosat si centrat */
+    table.tabel-special td.echipa {
+        background-color: magenta;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+</head>
+<body>
+
+<h1 id="hd">Tabel special</h1>
+<p>Un tabel cu "celule lipite"</p> 
+
+<table class="tabel-special">
+<caption>Echipe si hobby-uri</caption>
+  <tr>
+    <th>Echipa</th>
+    <th>Nume</th>
+    <th colspan="2">Pasiuni</th>
+  </tr>
+
+  <!-- Echipa Munte: rowspan="3" (2 membri initiali + 1 membru nou) -->
+  <tr>
+    <td class="echipa" rowspan="3">Munte</td>
+    <td>Popescu</td>
+    <td>calatorii</td>
+    <td>filatelie</td>
+  </tr>
+  <tr>
+    <td>Ionescu</td>
+    <td>planorism</td>
+    <td>sah</td>
+  </tr>
+  <!-- Membru nou Echipa Munte (Exercitiul 5) -->
+  <tr>
+    <td>Dumitrescu</td>
+    <td>orientare</td>
+    <td>alpinism</td>
+  </tr>
+
+  <!-- Echipa Mare: rowspan="4" (3 membri initiali + 1 membru nou) -->
+  <tr>
+    <td class="echipa" rowspan="4">Mare</td>
+    <td>Georgescu</td>
+    <td>plaja</td>
+    <td>dans</td>
+  </tr>
+  <tr>
+    <td>Gigescu</td>
+    <td>surf</td>
+    <td>samba</td>
+  </tr>
+  <tr>
+    <td>Mintescu</td>
+    <td>politica</td>
+    <td>delicateturi</td>
+  </tr>
+  <!-- Membru nou Echipa Mare (Exercitiul 5) -->
+  <tr>
+    <td>Vasilescu</td>
+    <td>caiac</td>
+    <td>snorkeling</td>
+  </tr>
+</table>
+
+<!--
+EXPLICATII EX 4, 5, 6:
+- Ex 4: Chenarele au fost contopite folosind 'border-collapse: collapse', iar lizibilitatea s-a obtinut prin adaugarea de 'padding' generos in celule si chenare verzi explicite.
+- Ex 5: La adaugarea membrului 'Dumitrescu' in echipa Munte, atributul 'rowspan' al celulei "Munte" a fost marit la 3. 
+La adaugarea membrului 'Vasilescu' in echipa Mare, atributul 'rowspan' al celulei "Mare" a fost marit la 4.
+- Ex 6: S-au aplicat regulile de stil conform imaginii: caption portocaliu cu scris alb, antet magenta, celule portocalii, celulele cu echipele magenta, 
+ingrosate si centrate, chenare verzi contopite. Titlul paginii (h1) si paragraful (p) au ramas cu stilurile lor initiale.
+-->
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Laboratorul 3 - Stiluri CSS</title>
+<style>
+    /* Exercițiul 5: Stiluri pentru lista de butoane */
+    ul.butoane {
+        list-style-type: none; /* elimină bulinele */
+        padding: 0;
+        display: flex; /* așează butoanele unul lângă altul */
+        gap: 15px; /* spațiu între butoane */
+    }
+    
+    ul.butoane li a {
+        text-decoration: none; /* elimină sublinierea */
+        color: white; /* text alb */
+        padding: 10px 20px;
+        border-radius: 8px; /* colțuri rotunjite */
+        font-family: Arial, sans-serif;
+        display: inline-block; /* corectează textul tăiat */
+        text-align: center;
+    }
+
+    /* Culori diferite pentru fiecare buton */
+    .btn-1 { background-color: #3498db; } /* albastru */
+    .btn-2 { background-color: #e74c3c; } /* roșu */
+    .btn-3 { background-color: #2ecc71; } /* verde */
+    .btn-4 { background-color: #f39c12; } /* portocaliu */
+</style>
+</head>
+<body>
+<h1>Laboratorul 3 - stiluri CSS</h1>
+<p><a href="FormtareText.html">Indicaţii</a></p>
+
+<!-- Lista cu linkuri transformate în butoane -->
+<ul class="butoane">
+    <li><a href="FormtareText_inline.html" class="btn-1">Stiluri inline</a></li>
+    <li><a href="FormtareText_internal.html" class="btn-2">Stiluri interne</a></li>
+    <li><a href="FormtareText_external.html" class="btn-3">Stiluri externe</a></li>
+    <li><a href="../index.html" class="btn-4">Înapoi la laboratoare</a></li>
+</ul>
+
+</body>
+</html>

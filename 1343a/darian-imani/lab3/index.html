@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorul 3 - Stiluri CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .butoane {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .butoane li a {
+            display: block;
+            padding: 12px 18px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .inline {
+            background-color: #1565c0;
+        }
+
+        .intern {
+            background-color: #2e7d32;
+        }
+
+        .extern {
+            background-color: #8e24aa;
+        }
+
+        .butoane li a:hover {
+            opacity: 0.8;
+        }
+
+        .navigare {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laboratorul 3 - Stiluri CSS</h1>
+
+    <p>Alege tipul de formatare pe care doresti sa il vizualizezi:</p>
+
+    <ul class="butoane">
+        <li>
+            <a class="inline" href="FormtareText_inline.html">
+                Stiluri inline
+            </a>
+        </li>
+        <li>
+            <a class="intern" href="FormtareText_internal.html">
+                Stiluri interne
+            </a>
+        </li>
+        <li>
+            <a class="extern" href="FormtareText_external.html">
+                Stiluri externe
+            </a>
+        </li>
+    </ul>
+
+    <p class="navigare">
+        <a href="FormtareText.html">Indicații teoretice</a>
+    </p>
+
+    <p>
+        <a href="../index.html">Înapoi la laboratoarele mele</a>
+    </p>
+</body>
+</html>

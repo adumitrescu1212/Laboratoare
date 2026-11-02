@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercițiul 5 - Alerte și Evenimente de Clic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            transition: background-color 0.3s ease; /* Tranziție lină pentru schimbarea fundalului */
+        }
+        p {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px dashed #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Titlul principal al paginii</h1>
+
+    <!-- Alertă între titlu și primul paragraf -->
+    <script>
+        alert("Alertă 1: Această alertă apare între titlu și primul paragraf în timpul încărcării paginii.");
+    </script>
+
+    <!-- Primul paragraf: la clic schimbă fundalul în galben -->
+    <p id="paragraf1">Acesta este primul paragraf. Dă clic pe el pentru ca fundalul să devină galben.</p>
+
+    <!-- Alertă între cele două paragrafe -->
+    <script>
+        alert("Alertă 2: Această alertă apare între cele două paragrafe în timpul încărcării paginii.");
+    </script>
+
+    <!-- Al doilea paragraf: la clic schimbă fundalul în portocaliu -->
+    <p id="paragraf2">Acesta este al doilea paragraf. Dă clic pe el pentru ca fundalul să devină portocaliu.</p>
+
+    <script>
+        // Adăugare evenimente de clic pentru paragrafe
+        document.getElementById("paragraf1").addEventListener("click", function() {
+            document.body.style.backgroundColor = "yellow";
+        });
+
+        document.getElementById("paragraf2").addEventListener("click", function() {
+            document.body.style.backgroundColor = "orange";
+        });
+    </script>
+
+</body>
+</html>

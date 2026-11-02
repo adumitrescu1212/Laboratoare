@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Pagina B1 - Exercițiul 3</title>
+<style>
+    /* Reguli generale pentru uniformizarea tabelelor */
+    table {
+        border-collapse: collapse; /* contopește chenarele */
+        margin-bottom: 30px;
+        width: 50%;
+    }
+    
+    th, td {
+        border: 2px solid black;
+        padding: 10px; /* uniformizează spațiul interior (padding) */
+        text-align: left;
+    }
+    
+    /* Regula cerută: schimbă fundalul primului tabel în albastru */
+    .tabel-albastru {
+        background-color: blue;
+        color: white; /* text alb pentru a fi vizibil pe albastru */
+    }
+</style>
+</head>
+<body>
+
+    <h1>Exercițiul 3 - Analiza tabelelor</h1>
+
+    <!-- Primul tabel care primește fundalul albastru prin clasa de mai sus -->
+    <table class="tabel-albastru">
+        <tr>
+            <th>Nume</th>
+            <th>Vârstă</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Mihai</td>
+            <td>24</td>
+        </tr>
+    </table>
+
+    <!-- Al doilea tabel, curățat de atributele style="..." pentru a fi uniform -->
+    <table>
+        <tr>
+            <th>Produs</th>
+            <th>Preț</th>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>3500 lei</td>
+        </tr>
+        <tr>
+            <td>Telefon</td>
+            <td>2000 lei</td>
+        </tr>
+    </table>
+
+    <!-- 
+    EXPLICAȚII EXERCIȚIUL 3:
+    1. De ce tabelele inițiale aveau fundaluri diferite deși nu aveau o regulă background-color? 
+       Răspuns: Elementul <table> nu are o culoare de fundal implicită (este transparent). Din acest motiv, el „moștenește” vizual culoarea de fundal a elementului părinte în care este așezat (de exemplu, un <div> colorat sau chiar <body>-ul paginii).
+       
+    2. De ce celulele celui de-al doilea tabel arătau diferit între ele? 
+       Răspuns: Deoarece în codul inițial anumite taguri <th> sau <td> aveau aplicate stiluri "inline" (ex: style="border: ..."). Stilurile inline au prioritate foarte mare și suprascriu regulile generale din <style>. Pentru a le uniformiza, am șters atributele style="..." de pe celule și am aplicat o regulă comună "th, td { ... }" în CSS.
+    -->
+
+</body>
+</html>

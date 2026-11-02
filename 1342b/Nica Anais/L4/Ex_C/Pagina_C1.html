@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Pagina C1 - Tabele avansate</title>
+<style>
+    /* EXERCIȚIUL 6: Formatarea tabelului cu culori */
+    table {
+        border-collapse: collapse; /* contopește chenarele */
+        width: 80%;
+        margin-top: 20px;
+    }
+    
+    th, td {
+        border: 2px solid green; /* chenare verzi */
+        padding: 15px; /* spațiu generos în celule */
+    }
+
+    /* Titlul tabelului alb, mare, pe fond portocaliu */
+    caption {
+        background-color: orange;
+        color: white;
+        font-size: 24px;
+        padding: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    /* Antet pe fond magenta */
+    th {
+        background-color: magenta;
+    }
+
+    /* Celule portocalii */
+    td {
+        background-color: orange;
+    }
+
+    /* Celulele cu numele echipelor: magenta, îngroșate și centrate */
+    td.nume-echipa {
+        background-color: magenta;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Echipe și hobby-uri</h1>
+    <p>Acesta este un tabel cu echipele noastre.</p>
+
+    <!-- Tabelul formatat -->
+    <table>
+        <caption>TABEL SPECIAL<br><span style="font-size: 14px; font-weight: normal;">Un tabel cu "celule lipite"</span></caption>
+        <tr>
+            <th>Echipa</th>
+            <th>Nume</th>
+            <th>Pasiuni</th>
+        </tr>
+
+        <!-- ECHIPA MUNTE -->
+        <tr>
+            <!-- Exercițiul 5: rowspan a devenit 3 pentru a cuprinde toți membrii -->
+            <td class="nume-echipa" rowspan="3">Munte</td>
+            <td>Popescu</td>
+            <td>alpinism, schi</td>
+        </tr>
+        <tr>
+            <td>Ionescu</td>
+            <td>drumeții, cort</td>
+        </tr>
+        <!-- Membru nou Munte (Ex. 5) -->
+        <tr>
+            <td>Radu</td>
+            <td>orientare, supraviețuire</td>
+        </tr>
+
+        <!-- ECHIPA MARE -->
+        <tr>
+            <!-- Exercițiul 5: rowspan a devenit 3 pentru a cuprinde toți membrii -->
+            <td class="nume-echipa" rowspan="3">Mare</td>
+            <td>Georgescu</td>
+            <td>înot, volei pe plajă</td>
+        </tr>
+        <tr>
+            <td>Stănescu</td>
+            <td>scufundări, surf</td>
+        </tr>
+        <!-- Membru nou Mare (Ex. 5) -->
+        <tr>
+            <td>Marin</td>
+            <td>navigație, pescuit</td>
+        </tr>
+    </table>
+
+</body>
+</html>

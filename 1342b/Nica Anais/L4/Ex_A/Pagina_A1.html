@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<title>Pagina A1</title>
+<style>
+    p {
+        color: blue;
+        background-color: #cccc00;
+    }
+    body {
+        background-color: #ffffcc;
+    }
+    .center, p {
+        text-align: center;
+        color: red;
+    }
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+    .center {
+        font-variant: small-caps;
+        /* color: blue; (A FOST ELIMINAT PENTRU CA TITLUL SĂ DEVINĂ ROȘU) */
+    }
+</style>
+</head>
+<body>
+    <h1 class="center">Heading roșu centrat</h1>
+    <p>Paragraf roșu centrat</p>
+    
+    <!-- Link corectat adăugând extensia .html -->
+    <a href="Pagina_A2.html">Pagina 2</a>
+
+    <!-- 
+    EXPLICAȚII EXERCIȚIUL 2:
+    Diferențe față de A2: În A1, regula .center {color: blue;} bătea culoarea roșie deoarece era scrisă ultima. Am șters-o, astfel încât h1 să ia culoarea roșie din regula anterioară (p, .center).
+    Fundalul verde al titlului apare doar aici pentru că Pagina A1 are o regulă h1 {background-color: #00cc66;} care nu există în Pagina A2. Regula h1 {color: orange;} este ignorată pentru că .center (clasă) are prioritate mai mare decât h1 (tag).
+    -->
+</body>
+</html>

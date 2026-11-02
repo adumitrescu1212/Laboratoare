@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercițiu Bonus - Contor</title>
+    <script>
+        var numarAprinderi = 0;
+
+        function actioneazaBec() {
+            var bec = document.getElementById("becImagine");
+            var paragraf = document.getElementById("mesajContor");
+            
+            console.log(bec.src);
+            
+            if (bec.src.includes("Bec%20stins.gif") || bec.src.includes("Bec stins.gif")) {
+                bec.src = "Bec aprins.gif";
+                numarAprinderi++;
+                paragraf.innerHTML = "Becul a fost aprins de " + numarAprinderi + " ori.";
+            } else {
+                bec.src = "Bec stins.gif";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>ExBonus Bec cu Contor</h1>
+    <img id="becImagine" src="Bec stins.gif" onclick="actioneazaBec()" alt="Bec">
+    <p id="mesajContor">Becul a fost aprins de 0 ori.</p>
+</body>
+</html>

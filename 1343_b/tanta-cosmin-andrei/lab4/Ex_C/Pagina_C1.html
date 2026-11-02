@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_C1</title>
+<style>
+    #hd {
+        font-variant: small-caps;
+        color:magenta;
+    }
+    h1 {
+        color: blue;
+    background-color: #cccc00;
+    }
+    caption {
+        color: white;
+        background-color: orange;
+        font-size: 22pt;
+        padding: 5px;
+    }
+      body {
+    background-color: #ffffcc;
+    }
+    .center, p {
+      text-align: center;
+      color: red;
+    }
+
+    table, th, td {
+      border: 3px solid darkgreen;
+      padding: 16px;
+      border-collapse: collapse;
+      background-color: magenta;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    td.personane-pasiuni{
+      background-color: orange;
+      text-align: left;
+      font-weight:normal;
+    }
+
+</style>
+</head>
+<body>
+
+<h1 id="hd">Tabel special</h1>
+<p>Un tabel cu "celule lipite"
+</p> 
+<table style="width:100%">
+<caption>Echipe si hobby-uri</caption>
+  <tr>
+    <th>Echipa</th>
+	<th>Nume</th>
+    <th colspan="2">Pasiuni</th>
+  </tr>
+  <tr>
+	<td rowspan="3">Munte</td>
+    <td class="personane-pasiuni">Popescu</td>
+    <td class="personane-pasiuni">calatorii</td>
+    <td class="personane-pasiuni">filatelie</td>
+  </tr>
+  <tr>
+    <td class="personane-pasiuni">Ionescu</td>
+    <td class="personane-pasiuni">planorism</td>
+    <td class="personane-pasiuni">sah</td>
+  </tr>
+  <tr>
+    <td class="personane-pasiuni">Razvanescu</td>
+    <td class="personane-pasiuni">citit</td>
+    <td class="personane-pasiuni">pescuit</td>
+  </tr>
+  <tr>
+	<td rowspan="4">Mare</td>
+    <td class="personane-pasiuni">Georgescu</td>
+    <td class="personane-pasiuni">plaja</td>
+    <td class="personane-pasiuni">dans</td>
+  </tr>
+  <tr>
+    <td class="personane-pasiuni">Gigescu</td>
+    <td class="personane-pasiuni">surf</td>
+    <td class="personane-pasiuni">samba</td>
+  </tr>
+  <tr>
+    <td class="personane-pasiuni">Mintescu</td>
+    <td class="personane-pasiuni">politica</td>
+    <td class="personane-pasiuni">delicateturi</td>
+  </tr>
+  <tr>
+    <td class="personane-pasiuni">Alexandrescu</td>
+    <td class="personane-pasiuni">pictat</td>
+    <td class="personane-pasiuni">curse de cai</td>
+  </tr>
+</table>
+</body>
+</html>

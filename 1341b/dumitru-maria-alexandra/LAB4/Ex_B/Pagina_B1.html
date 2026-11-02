@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_B1</title>
+<style>
+    body {
+        background-color: #ffffcc;
+    }
+    .center {
+        text-align: center;
+        color: white;
+    }
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    .centre {
+        border: 5px solid blue;
+        padding: 15px;
+    }
+    #s1 {
+        background-color: #00cc66;
+    }
+    #s2 {
+        background-color: yellow;
+    }
+    div {
+        color: blue;
+    }
+</style>
+</head>
+<body>
+
+<h1 class="center">Tabele formatate</h1>
+
+<div id="s1">
+    <table style="width:100%; background-color: blue;" class="center">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <br>
+</div> 
+
+<div id="s2" style="width:50%">
+    <br>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+</div> 
+
+<!-- 
+Exercitiul 3:
+1. Cele doua tabele au fundaluri diferite pentru ca tabelele mostenesc culoarea de fundal a containerelor div in care se afla. Tabelul 1 este in #s1 (verde), iar Tabelul 2 este in #s2 (galben).
+
+2. Celulele celui de-al doilea tabel arata diferit intre ele din cauza clasei ".centre", care adauga un chenar gros si padding. Aceasta clasa era aplicata doar pe unele celule (ex: Jill, Eve), generand un aspect neuniform. Uniformizarea s-a realizat eliminand clasa ".centre" de pe elementele th si td individuale.
+-->
+</body>
+</html>

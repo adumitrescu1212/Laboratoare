@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ex Bonus Contor</title>
+    <script>
+        var nr = 0;
+
+        function schimba() {
+            var bec = document.getElementById("bec");
+            var text = document.getElementById("text");
+
+            nr++;
+
+            if (nr % 2 != 0) {
+                bec.src = "Bec aprins.gif";
+                text.innerHTML = "Becul a fost aprins de " +  Math.ceil(nr / 2) + " ori.";
+            } 
+            else {
+                bec.src = "Bec stins.gif";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Contor Bec</h1>
+
+    <p>
+        <img id="bec" 
+        src="Bec stins.gif"
+         width="100" 
+         height="180" onclick="schimba()">
+    </p>
+
+    <p id="text">Becul a fost aprins de 0 ori.</p>
+
+</body>
+</html>

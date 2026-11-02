@@ -1,0 +1,56 @@
+#header1_sep {
+    font-family: 'Courier New', monospace;
+    font-size: 14pt;
+    color: blue
+}
+
+#header2_sep {
+    font-family: 'Arial', sans-serif;
+    font-size: 12pt;
+    color: red;
+}
+
+#parag_sep {
+    font-family: 'Times New Roman', serif;
+    font-size: 12pt;
+    color: green;
+}
+
+.sectiune1 {
+    background-color: yellow;
+    font-family: 'Calibri', sans-serif;
+    font-size: 12pt;
+    color: blue;
+}
+
+    .sectiune1 h3 {
+        font-family: 'Calibri', sans-serif;
+        font-size: 12pt;
+        color: blue;
+    }
+
+    .sectiune1 p {
+        font-style: italic;
+    }
+
+.sectiune2 {
+    background-color: blue;
+    font-family: 'Arial', sans-serif;
+    font-size: 10pt;
+    color: white;
+}
+
+    .sectiune2 h1 {
+        font-family: 'Arial', sans-serif;
+        font-size: 10pt;
+        color: white;
+    }
+
+    .sectiune2 p {
+        font-variant: small-caps;
+    }
+
+.footer {
+    color: white;
+    background-color: black;
+}

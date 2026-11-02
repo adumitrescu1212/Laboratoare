@@ -1,0 +1,93 @@
+
+.header1 {
+    font-family:Courier, monospace;
+    color:blue;
+    text-align:center;
+    font-size:14pt;
+}
+
+.header2 {
+    font-family:Arial, sans-serif;
+    color:red;
+    text-align:center;
+    font-size:12pt;
+}
+
+.paragraf {
+    font-family:'Times New Roman', serif;
+    font-size:12pt;
+    color:green;
+}
+
+.paragraf2 {
+    color: green;
+}
+
+.sectiune-galbena {
+    background-color: yellow;
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
+    color: blue;
+}
+
+.paragraf-italic {
+    font-style: italic;
+}
+
+.sectiune-albastra {
+    background-color: blue;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    color: white;
+}
+
+.small-caps {
+    font-variant: small-caps;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.exercitii {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.exercitii a {
+    display: inline-block;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.exercitii li:nth-child(1) a {
+    background-color: #2878b5;
+}
+
+.exercitii li:nth-child(2) a {
+    background-color: #2f8f62;
+}
+
+.exercitii li:nth-child(3) a {
+    background-color: #c65d3b;
+}
+
+.exercitii a:hover {
+    color: white;
+    filter: brightness(0.9);
+}
+
+a:hover {
+    color:blue;
+    background-color:yellow
+}
+a:active {
+    color:red;
+    background-color:yellow
+}

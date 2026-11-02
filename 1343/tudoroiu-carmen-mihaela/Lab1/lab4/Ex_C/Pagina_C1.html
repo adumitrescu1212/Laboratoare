@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<title>CSS_C1</title>
+<style>
+
+    #hd {
+        font-variant: small-caps;
+        color: magenta;
+    }
+    h1, caption {
+        color: blue;
+        background-color: #cccc00;
+    }
+    body {
+        background-color: #ffffcc;
+    }
+    .center, p {
+        text-align: center;
+        color: red;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid green;
+        padding: 10px 12px;
+    }
+
+    caption {
+        color: white;
+        background-color: orange;
+        font-size: 1.5em;
+        padding: 4px;
+    }
+    th {
+        background-color: magenta;
+    }
+    td {
+        background-color: orange;
+    }
+    td.echipa {
+        background-color: magenta;
+        font-weight: bold;
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+
+<h1 id="hd">Tabel special</h1>
+<p>Un tabel cu "celule lipite"</p>
+
+<table>
+  <caption>Echipe și hobby-uri</caption>
+  <tr>
+    <th>Echipa</th>
+    <th>Nume</th>
+    <th colspan="2">Pasiuni</th>
+  </tr>
+  <tr>
+    <td class="echipa" rowspan="3">Munte</td>
+    <td>Popescu</td>
+    <td>călătorii</td>
+    <td>filatelie</td>
+  </tr>
+  <tr>
+    <td>Ionescu</td>
+    <td>planorism</td>
+    <td>șah</td>
+  </tr>
+  <tr>
+    <td>Vasilescu</td>
+    <td>alpinism</td>
+    <td>fotografie</td>
+  </tr>
+  <tr>
+    <td class="echipa" rowspan="4">Mare</td>
+    <td>Georgescu</td>
+    <td>plajă</td>
+    <td>dans</td>
+  </tr>
+  <tr>
+    <td>Gigescu</td>
+    <td>surf</td>
+    <td>samba</td>
+  </tr>
+  <tr>
+    <td>Mintescu</td>
+    <td>politică</td>
+    <td>delicatețuri</td>
+  </tr>
+  <tr>
+    <td>Marinescu</td>
+    <td>înot</td>
+    <td>pescuit</td>
+  </tr>
+</table>
+
+</body>
+</html>

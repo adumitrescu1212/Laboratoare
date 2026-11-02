@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorul 3 - CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .butoane {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .butoane a {
+            display: inline-block;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            background-color: blue;
+        }
+
+        .butoane li:nth-child(2) a {
+            background-color: green;
+        }
+
+        .butoane li:nth-child(3) a {
+            background-color: red;
+        }
+
+        .butoane a:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<div style="background-color:rgb(253, 234, 250)">    
+<body>
+    <h1>Laboratorul 3 - Stiluri CSS</h1>
+
+    <ul class="butoane">
+        <li>
+            <a href="FormtareText_inline.html">Stiluri inline</a>
+        </li>
+
+        <li>
+            <a href="FormtareText_internal.html">Stiluri interne</a>
+        </li>
+
+        <li>
+            <a href="FormtareText_external.html">Stiluri externe</a>
+        </li>
+    </ul>
+
+    <p><a href="../index.html">Laboratoarele mele</a></p>
+</div>
+    </body>
+</body>
+</html>

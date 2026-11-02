@@ -1,0 +1,17 @@
+.meniu a {
+    text-decoration: underline;
+    margin-right: 5px;
+    color: #000;
+}
+
+/* cerința (a): la hover pe link se schimbă culoarea */
+.meniu a:hover {
+    color: red;
+}
+
+/* cerința (b): linkul paginii curente este îngroșat și fără subliniere */
+.meniu a.activ {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}

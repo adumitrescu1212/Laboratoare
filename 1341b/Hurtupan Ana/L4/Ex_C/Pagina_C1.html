@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_C1</title>
+<style>
+    #hd {
+        font-variant: small-caps;
+        color:magenta;
+    }
+    h1 {
+        color: blue;
+        background-color: #cccc00;
+    }
+    body {
+        background-color: #ffffcc;
+    }
+    .center, p {
+        text-align: center;
+        color: red;
+    }
+    
+    table, th, td {
+        border: 2px solid green;
+        border-collapse: collapse;
+    }
+    
+    th, td {
+        padding: 15px;
+    }
+    
+    caption {
+        color: white;
+        background-color: orange;
+        font-size: 1.5em; 
+        font-weight: bold;
+        padding: 10px;
+    }
+    
+    th {
+        background-color: magenta;
+    }
+    
+    td {
+        background-color: orange;
+    }
+    
+    .nume-echipa {
+        background-color: magenta;
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h1 id="hd">Tabel special</h1>
+<p>Un tabel cu "celule lipite"</p> 
+
+<table style="width:100%">
+<caption>Echipe si hobby-uri</caption>
+  <tr>
+    <th>Echipa</th>
+	<th>Nume</th>
+    <th colspan="2">Pasiuni</th>
+  </tr>
+  <tr>
+    <!-- Am adaugat clasa nume-echipa pentru a formata specific aceasta celula -->
+	<td rowspan="3" class="nume-echipa">Munte</td>
+    <td>Popescu</td>
+    <td>calatorii</td>
+    <td>filatelie</td>
+  </tr>
+  <tr>
+    <td>Ionescu</td>
+    <td>planorism</td>
+    <td>sah</td>
+  </tr>
+  <tr>
+    <td>Hurtupan</td>
+    <td>drumetii</td>
+    <td>calarie</td>
+  </tr>
+  <tr>
+    <!-- Am adaugat clasa nume-echipa -->
+	<td rowspan="4" class="nume-echipa">Mare</td>
+    <td>Georgescu</td>
+    <td>plaja</td>
+    <td>dans</td>
+  </tr>
+  <tr>
+    <td>Gigescu</td>
+    <td>surf</td>
+    <td>samba</td>
+  </tr>
+  <tr>
+    <td>Mintescu</td>
+    <td>politica</td>
+    <td>delicateturi</td>
+  </tr>
+  <tr>
+    <td>Popa</td>
+    <td>inot</td>
+    <td>volei pe plaja</td>
+  </tr>
+</table>
+
+<!--
+Explicatii 
+EX4:
+Pentru a face tabelul lizibil, am adaugat un selector multiplu "table, th, td" cu urmatoarele proprietati:
+1. border: 1px solid blue; - pentru a trasa linii in jurul tabelului si al fiecarei celule.
+2. border-collapse: collapse; - pentru a lipi chenarele vecine, evitand liniile duble.
+3. padding: 8px; - pentru a crea un spatiu aerisit intre text si marginea celulei.
+
+EX5:
+Pentru ca celulele "Munte" si "Mare" sa cuprinda in continuare toti membrii, a trebuit sa actualizam atributul `rowspan`. 
+Acest atribut ii spune browserului pe cate randuri sa se intinda celula respectiva. 
+Deoarece am adaugat cate un membru (un rand) in fiecare echipa, am incrementat valoarea `rowspan` cu 1 pentru ambele echipe (de la 2 la 3 pentru Munte, si de la 3 la 4 pentru Mare).
+
+EX6:
+1. Pentru a respecta cerinta "Titlul paginii raman cum sunt", am separat selectorul "caption" de "h1" in sectiunea de style, pentru a le putea formata independent.
+2. Am stilizat "caption" cu text alb (color: white), fundal portocaliu (background-color: orange) si l-am facut mai mare (font-size: 1.5em).
+3. Pentru tabel, am schimbat culoarea chenarelor in verde (border: 2px solid green). "border-collapse: collapse" a ramas pentru a contopi chenarele.
+4. Pentru spatiul generos, am marit "padding"-ul la 15px pentru elementele th si td.
+5. Am adaugat regula generala pentru fundal: elementele th (antet) au background-color: magenta, iar elementele td (celulele de date) au background-color: orange.
+6. Deoarece celulele cu numele echipelor (Munte si Mare) sunt de tip "td" dar trebuiau sa fie magenta, centrate si ingrosate, am creat o clasa CSS noua numita ".nume-echipa". Am aplicat aceasta clasa direct pe cele doua celule in codul HTML (<td rowspan="..." class="nume-echipa">), suprascriind astfel fundalul portocaliu general al tag-ului td.
+-->
+
+</body>
+</html>

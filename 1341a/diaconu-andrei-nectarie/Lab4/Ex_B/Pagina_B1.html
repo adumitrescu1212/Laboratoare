@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_B1</title>
+<style>
+    body {
+        background-color: #ffffcc;
+    }
+    .center {
+        text-align: center;
+        color: white;
+    }
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .centre, .centre th, .centre td {
+        border: 5px solid blue;
+        padding: 15px;
+    }
+    #s1 {
+        background-color: #00cc66;
+    }
+
+    #s1 table {
+        background-color: blue;
+    }
+    #s2 {
+        background-color: yellow;
+    }
+    div {
+        color: blue;
+    }
+</style>
+</head>
+<body>
+
+<h1 class="center">Tabele formatate</h1>
+<div id="s1">
+<table style="width:100%" class="center">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<br>
+</div> 
+<div id="s2" style="width:50%">
+<br>
+<table style="width:100%" class="centre">
+  <tr>
+    <th class="centre">Firstname</th>
+    <th class="centre">Lastname</th>
+    <th class="centre">Age</th>
+  </tr>
+  <tr>
+    <td class="centre">Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td class="centre">Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+</div> 
+
+<!-- 
+Explicatii Exercitiul 3:
+1. Tabelele au fundaluri diferite pentru ca nu au background-color setat pe ele, deci sunt transparente si se vede fundalul
+din div-ul parinte (#s1 are fundal verde, iar #s2 are fundal galben).
+
+2. Celulele din al doilea tabel arata diferit pentru ca doar th-urile si primele td-uri de pe rand au clasa "centre"
+(care pune border albastru de 5px si padding 15px, avand prioritate fata de td). 
+Restul celulelor nu au clasa asta si raman cu border-ul negru de 1px si fara padding. 
+Ca sa arate toate la fel, am aplicat stilul din .centre pe toate celulele din tabel (.centre th, .centre td).
+-->
+</body>
+</html>
