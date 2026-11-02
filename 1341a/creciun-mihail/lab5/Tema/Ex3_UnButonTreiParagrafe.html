@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modificari paragrafe</title>
+<script>
+function modificaParagrafe() {
+    const paragrafe = document.getElementsByTagName('p');
+    const culoriFundal = ['pink', 'hotpink', '#F9629F'];
+
+    for (let i = 0; i < paragrafe.length; i++) {
+        paragrafe[i].textContent = 'Acesta este paragraful ' + (i + 1);
+        paragrafe[i].style.color = '#800020';
+        paragrafe[i].style.backgroundColor = culoriFundal[i];
+    }
+}
+</script>
+</head>
+<body>
+
+<h1>Modificari paragrafe la click pe buton</h1>
+
+<p>Acesta este un paragraf</p>
+
+<p>Si acesta este un paragraf</p>
+
+<p>Acesta este inca un paragraf</p>
+
+<button type="button" onclick="modificaParagrafe()">Apasa-ma!</button>
+
+</body>
+</html> 

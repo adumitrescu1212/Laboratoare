@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<title>CSS_A2</title>
+<style>
+    /* EXERCITIUL BONUS */
+    h1.center {
+        background-color: #00cc66;
+        color: orange;
+    }
+
+    .center {
+        font-variant: small-caps;
+        color: blue;
+    }
+    p {
+        color: blue;
+        background-color: #cccc00;
+    }
+    body {
+        background-color: #ffffcc;
+    }
+    .center, p {
+        text-align: center;
+        color: red;
+    }
+</style>
+</head>
+<body>
+
+<h1 class="center">Heading rosu centrat</h1>
+<p>Paragraf rosu centrat<br>
+Duis elementum semper neque, sed posuere quam posuere vel. Morbi auctor tellus lectus, et ultrices leo rutrum sed. In sollicitudin aliquet posuere. Duis vel egestas nisl, et rhoncus orci. Quisque nisl ex, vestibulum quis lacus a, pretium pellentesque ligula. Curabitur odio ligula, semper at magna eget, mattis lobortis ligula. Nam quis viverra mi, et rutrum odio. Cras egestas elementum ex id malesuada. Sed ornare scelerisque libero in hendrerit. Cras eu diam id nibh molestie vehicula efficitur ac velit. Nulla pellentesque suscipit vehicula. Donec vitae auctor nulla, in auctor enim. Fusce eu pretium felis. Nam commodo lacus ligula, et luctus ex bibendum eu.
+</p> 
+<a href="Pagina_A1.html">Pagina 1</a>
+
+<!--
+EXPLICATIE EXERCITIUL BONUS:
+O regula simpla scrisa la inceputul blocului <style> nu ar fi fost suficienta
+deoarece un selector de tag (h1) are specificitatea (0, 0, 1), pe cand selectorii de clasa de mai jos (.center si .center, p)
+au specificitatea (0, 1, 0). Fiind mai specifici, selectorii de clasa ar fi suprascris culoarea portocalie cu albastru sau rosu.
+
+Folosind selectorul compus h1.center (tag + clasa), specificitatea creste la (0, 1, 1). Deoarece (0, 1, 1) este mai mare decat (0, 1, 0),
+aceasta regula castiga conflictul chiar daca este scrisa la inceputul blocului CSS si fara sa utilizam directiva !important.
+-->
+</body>
+</html>

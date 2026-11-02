@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<title>CSS_B1</title>
+<style>
+    body {
+        background-color: #ffffcc;
+    }
+    .center {
+        text-align: center;
+        color: white;
+    }
+    h1 {
+        background-color: #00cc66;
+        color: orange;
+    }
+
+    /* Schimbat fundalul primului tabel in albastru - ex 3 */
+    #s1 table {
+        background-color: blue;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    /* Uniformizarea celulelor in al doilea tabel - ex 3 */
+    #s2 table {
+        border: 5px solid blue;
+        border-collapse: collapse;
+    }
+
+    #s2 th, #s2 td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #s1 {
+        background-color: #00cc66;
+    }
+    #s2 {
+        background-color: yellow;
+    }
+    div {
+        color: blue;
+    }
+</style>
+</head>
+<body>
+
+<h1 class="center">Tabele formatate</h1>
+<div id="s1">
+<table style="width:100%" class="center">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+<br>
+</div> 
+
+<div id="s2" style="width:50%">
+<br>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+</div> 
+
+<!--
+EXPLICATII EX 3:
+1. De ce cele doua tabele aveau fundaluri diferite desi niciunul nu avea 'background-color':
+   Elementele <table> au implicit fundal transparent. Cele doua tabele aveau fundaluri vizuale diferite deoarece erau plasate in div-uri parinte cu culori de fundal diferite (#s1 are verde #00cc66, iar #s2 are galben yellow). 
+   Prin transparenta, se vedea fundalul div-ului in care se aflau.
+   S-a setat 'background-color: blue;' pe primul tabel (#s1 table) pentru a-i schimba fundalul in albastru.
+
+2. De ce celulele celui de-al doilea tabel aratau diferit intre ele si cum s-au uniformizat:
+   Celulele aratau diferit deoarece doar o parte din celule (ex. cele din prima coloana) aveau clasa class="centre" care le aplica chenar gros de 5px albastru si padding de 15px, in timp ce celelalte celule aveau doar stilul implicit.
+   Uniformizarea s-a realizat prin eliminarea claselor individuale de pe fiecare celula si aplicarea unei reguli CSS comune (#s2 th, #s2 td) cu un padding (10px) si un border unitar.
+-->
+
+</body>
+</html>

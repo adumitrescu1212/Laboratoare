@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modificari cu functie JavaScript</title>
+<script>
+function myFunction() {
+    var x = document.getElementById("demo");
+    x.style.fontSize = "25px";           
+    x.style.color = "red"; 
+	x.innerHTML = "Paragraf modificat!";
+ var y = document.getElementById("butt");
+  var z = y.innerHTML;
+   if (z == "Apasa-ma!"){
+     y.innerHTML="Wow!";
+    y.style.fontSize = "25px";           
+    y.style.color = "blue";}
+   else 
+    { y.innerHTML="Apasa-ma!";
+    y.style.fontSize = "12px";           
+    y.style.color = "black";}
+
+}
+</script>
+</head>
+<body>
+
+<h1>Modificari la click pe buton</h1>
+
+<p id="demo">Paragraf de modificat</p>
+
+<button id="butt" type="button" onclick="myFunction()">Apasa-ma!</button>
+
+</body>
+</html> 

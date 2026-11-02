@@ -1,0 +1,40 @@
+h1.header-principal {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14pt;
+    color: blue;
+}
+h2.header-secundar {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    color: red;
+}
+p.paragraf-verde {
+    font-family: 'Times New Roman', serif;
+    font-size: 12pt;
+    color: green;
+}
+
+div.sectiune-galbena {
+    background-color: yellow;
+    font-family: Calibri, sans-serif;
+    font-size: 12pt;
+    color: blue;
+}
+div.sectiune-galbena p {
+    font-style: italic;
+}
+
+div.sectiune-albastra {
+    background-color: blue;
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    color: white;
+}
+div.sectiune-albastra p {
+    font-variant: small-caps;
+}
+
+footer {
+    color: white;
+    background-color: black;
+}
