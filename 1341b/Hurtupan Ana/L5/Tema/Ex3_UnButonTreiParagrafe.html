@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modificari paragrafe</title>
+<script>
+    function myFunction() {
+        var x = document.getElementById("p1");
+        x.style.fontSize = "25px";
+        x.style.color = "white";
+        x.style.backgroundColor = "coral";
+        x.innerHTML = "Acesta este paragraful 1";
+        var y = document.getElementById("p2");
+        y.style.fontSize = "25px";
+        y.style.color = "gray";
+        y.style.backgroundColor = "pink";
+        y.innerHTML = "Acesta este paragraful 2";
+        var z = document.getElementById("p3");
+        z.style.fontSize = "25px";
+        z.style.color = "gray";
+        z.style.backgroundColor = "lightblue";
+        z.innerHTML = "Acesta este paragraful 3";
+    
+    }
+    </script>
+</head>
+<body>
+
+<h1>Modificari paragrafe la click pe buton</h1>
+
+<p id="p1">Acesta este un paragraf</p>
+
+<p id="p2">Si acesta este un paragraf</p>
+
+<p id="p3">Acesta este inca un paragraf</p>
+
+<button id="butt" type="button" onclick="myFunction()">Apasa-ma!</button>
+
+</body>
+</html> 
