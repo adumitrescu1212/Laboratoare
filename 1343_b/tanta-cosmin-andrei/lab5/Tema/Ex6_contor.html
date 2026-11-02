@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Bec </title>
+<script>
+var contor = 0;
+function light() {
+    var bec = document.getElementById('bec')
+
+    if (bec.src.match("Bec_stins.gif")) {
+        bec.src = "Bec_aprins.gif";
+        contor += 1; 
+    } else {
+        bec.src = "Bec_stins.gif";
+    }
+    var text_count = document.getElementById('counter');         
+    text_count.innerHTML = `Becul a fost aprins de ${contor} ori`;
+
+}
+</script>
+</head>
+<body>
+
+<h1>Bec stins</h1>
+
+<p>
+<img onclick="light()"  
+id="bec" src="Bec_stins.gif" width="100" height="180">
+</p>
+
+<p id="counter"  style="font-size: 25px; color: floralwhite; background-color: Indigo;" > 
+Becul inca nu a fost aprins
+</p>
+
+
+
+</body>
+</html>
